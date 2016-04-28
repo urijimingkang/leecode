@@ -1,1 +1,2 @@
 hello andy`
+slave add a new line
