@@ -100,6 +100,7 @@ class LinkNode<T>{
 
     public LinkNode(T data){
         this.data=data;
+        next=null;
     }
     public LinkNode(T data,LinkNode<T> next){
         this.data=data;
