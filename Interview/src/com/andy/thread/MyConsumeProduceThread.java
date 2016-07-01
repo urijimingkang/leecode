@@ -84,8 +84,9 @@ while(true)
                 while(num>2) {
 
                     try {
-                        //   Thread.sleep(5);
+                        System.out.println("before wait:Producer:count=" +num);
                         wait();
+                        System.out.println("after wait:Producer:count=" +num);
 
                     } catch (Exception e) {
                         e.printStackTrace();
