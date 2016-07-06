@@ -19,11 +19,24 @@ public class MylinkList<T> {
     public int getSize()
     {return this.size;}
     public   LinkNode<T> arrayToLinkedList(T[] array){
-         LinkNode<T> head=new LinkNode<T>(null,null);
+       //  LinkNode<T> head=new LinkNode<T>(null,null);
+        LinkNode<T> p=head;
         for(T t:array){
-            this.addLast( t);
+            LinkNode<T> node=new LinkNode<T>(t);
+            p.next=node;
+            p=node;
+            size++;
         }
         return head;
+    }
+
+    public   void arrayToLinkedList2(T[] array){
+          LinkNode<T> head=new LinkNode<T>(null,null);
+
+        for(T t:array){
+            addLast(t);
+        }
+
     }
 
     public void addFirst(T data){
@@ -89,22 +102,6 @@ public class MylinkList<T> {
         }
         System.out.println();
 
-    }
-
-}
-class LinkNode<T>{
-    //LinkedList t;
-    public T data;
-
-    public LinkNode<T> next;
-
-    public LinkNode(T data){
-        this.data=data;
-        next=null;
-    }
-    public LinkNode(T data,LinkNode<T> next){
-        this.data=data;
-        this.next=next;
     }
 
 }

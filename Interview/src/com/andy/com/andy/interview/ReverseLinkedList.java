@@ -8,15 +8,7 @@ import java.util.*;
  * Created by aweng on 7/6/2016.
  */
 public class ReverseLinkedList<T> {
-    public static void main(String [] args){
-        Integer[] arr=new Integer[]{1,2,3,4};
-        ReverseLinkedList t=new ReverseLinkedList();
-        LinkNode head= t.arrayToLinkedList(arr);
-        t.print();
-        t.reversepPrint();
-        t.iteratePrint(head.next);
 
-    }
  private LinkNode<T> next;
     private int size=0;
     private LinkNode<T> head=new LinkNode<T>(null,null);
@@ -61,8 +53,8 @@ public class ReverseLinkedList<T> {
 
 
 
-        System.out.println("iteratePrint");
-        if(p!=null) {
+
+        if(p!=null&&p.data!=null) {
             System.out.print(p.data + " ");
             iteratePrint(p = p.next);
         }
@@ -73,7 +65,7 @@ public class ReverseLinkedList<T> {
 
 
     }
-    public void reversepPrint(){
+    public void reversePrint(){
         LinkNode<T> p=head.next;
         Stack<T> mystack=new Stack<T>();
         while(p!=null)
@@ -87,5 +79,36 @@ public class ReverseLinkedList<T> {
 
         }
         System.out.println();
+    }
+    public LinkNode<T> reverseLink(){
+        LinkNode<T> pre=head;
+        LinkNode<T> p=pre.next;
+        LinkNode<T> next=null;
+
+
+        while(p!=null)
+        {
+            next=p.next;
+            p.next=pre;
+            pre=p;
+           p=next;
+
+        }
+        head.next=null;
+       // head.next=pre;
+        return pre;
+
+    }
+    public static void main(String [] args){
+        Integer[] arr=new Integer[]{1,2,3,4};
+        ReverseLinkedList t=new ReverseLinkedList();
+        LinkNode head= t.arrayToLinkedList(arr);
+        t.print();
+        t.reversePrint();
+       // System.out.println("iteratePrint");
+       // t.iteratePrint(head.next);
+        LinkNode inVhead=t.reverseLink();
+        System.out.println( "reverseLink and then iteratePrint");
+        t.iteratePrint(inVhead);
     }
 }
