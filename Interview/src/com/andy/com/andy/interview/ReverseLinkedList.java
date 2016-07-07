@@ -139,7 +139,7 @@ int i=0;
 
             secondEnd=secondEnd.next;
         }
-        secondEnd.next=firstHead;
+        secondEnd.next=firstHead;//第二个表的尾部连着第一个表的头
         firstEnd.next=null;
 
 return secondHead;
