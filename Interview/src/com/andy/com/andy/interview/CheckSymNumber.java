@@ -35,10 +35,7 @@ public class CheckSymNumber {
                 break;
 
             }
-
-
-
-
+            
         }
         return flag;
     }
