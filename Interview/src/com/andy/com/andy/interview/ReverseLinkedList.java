@@ -99,6 +99,28 @@ public class ReverseLinkedList<T> {
         return pre;
 
     }
+
+    public LinkNode<T> swichPair(){
+        LinkNode<T> pre=head;
+        LinkNode<T> p=pre.next;
+        LinkNode<T> next=null;
+
+
+        while(p!=null)
+        {
+            next=p.next;
+            p.next=pre;
+            pre=p;
+            p=next;
+
+        }
+        head.next=null;
+        // head.next=pre;
+        return pre;
+
+    }
+
+
     public static void main(String [] args){
         Integer[] arr=new Integer[]{1,2,3,4};
         ReverseLinkedList t=new ReverseLinkedList();
