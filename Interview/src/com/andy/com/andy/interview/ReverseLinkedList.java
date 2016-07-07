@@ -119,14 +119,14 @@ int i=0;
 
     }
 
-    public LinkNode<T>  reverseLinkAtPosition(int k){ // 1->2->3->4->5->6 k=2  =>3->4->5->6->1->2
-        LinkNode<T> p=head.next;
+    public LinkNode<T>  reverseLinkAtPosition(LinkNode start,int k){ // 1->2->3->4->5->6 k=2  =>3->4->5->6->1->2
+        LinkNode<T> p=start;
         LinkNode<T> secondHead=null;
         LinkNode<T> secondEnd=null;
         LinkNode<T> firstHead=p;
         LinkNode<T> firstEnd=null;
       int i=1;
-        while(p!=null&&i<k)
+        while(i<k)
         {
             p=p.next;
             i++;
@@ -168,9 +168,9 @@ return secondHead;
 
 
     public static void main(String [] args){
-        Integer[] arr=new Integer[]{1,2,3,4,5,6};
+        int[] arr=new int[]{1,2,3,4,5,6};
         ReverseLinkedList t=new ReverseLinkedList();
-        LinkNode head= t.arrayToLinkedList(arr);
+        LinkNode head= LinkNode.arrayToList(arr);
         t.print();
        // t.reversePrint();
        // System.out.println("iteratePrint");
@@ -178,7 +178,7 @@ return secondHead;
      //  LinkNode inVhead=t.reverseLink();
      //   System.out.println( "reverseLink and then iteratePrint");
       //  t.iteratePrint(inVhead);
-       LinkNode tmpNode= t.reverseLinkAtPosition(2);
+       LinkNode tmpNode= t.reverseLinkAtPosition(head,2);
         LinkNode.printList(tmpNode);
         t.print();
     }
