@@ -99,6 +99,52 @@ public class ReverseLinkedList<T> {
         return pre;
 
     }
+    public LinkNode<T> reverseLink(LinkNode<T> start,int n){
+        LinkNode<T> pre=start;
+        LinkNode<T> p=pre.next;
+        LinkNode<T> next=null;
+
+int i=0;
+        while(p!=null&&i<n)
+        {i++;
+            next=p.next;
+            p.next=pre;
+            pre=p;
+            p=next;
+
+        }
+        head.next=null;
+
+        return pre;
+
+    }
+
+    public LinkNode<T>  reverseLinkAtPosition(int k){ // 1->2->3->4->5->6 k=2  =>3->4->5->6->1->2
+        LinkNode<T> p=head.next;
+        LinkNode<T> secondHead=null;
+        LinkNode<T> secondEnd=null;
+        LinkNode<T> firstHead=p;
+        LinkNode<T> firstEnd=null;
+      int i=1;
+        while(p!=null&&i<k)
+        {
+            p=p.next;
+            i++;
+        }
+        secondHead=p.next;
+        secondEnd=secondHead;
+        firstEnd=p;
+
+        while(secondEnd.next!=null){
+
+            secondEnd=secondEnd.next;
+        }
+        secondEnd.next=firstHead;
+        firstEnd.next=null;
+
+return secondHead;
+
+    }
 
     public LinkNode<T> swichPair(){
         LinkNode<T> pre=head;
@@ -122,15 +168,18 @@ public class ReverseLinkedList<T> {
 
 
     public static void main(String [] args){
-        Integer[] arr=new Integer[]{1,2,3,4};
+        Integer[] arr=new Integer[]{1,2,3,4,5,6};
         ReverseLinkedList t=new ReverseLinkedList();
         LinkNode head= t.arrayToLinkedList(arr);
         t.print();
-        t.reversePrint();
+       // t.reversePrint();
        // System.out.println("iteratePrint");
-       // t.iteratePrint(head.next);
-        LinkNode inVhead=t.reverseLink();
-        System.out.println( "reverseLink and then iteratePrint");
-        t.iteratePrint(inVhead);
+     //  t.iteratePrint(head.next);
+     //  LinkNode inVhead=t.reverseLink();
+     //   System.out.println( "reverseLink and then iteratePrint");
+      //  t.iteratePrint(inVhead);
+       LinkNode tmpNode= t.reverseLinkAtPosition(2);
+        LinkNode.printList(tmpNode);
+        t.print();
     }
 }
