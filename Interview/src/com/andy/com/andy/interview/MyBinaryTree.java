@@ -3,6 +3,7 @@ import com.andy.datastructure.*;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.math.*;
 
 /**
  * Created by aweng on 7/26/2016.
@@ -93,6 +94,18 @@ public class MyBinaryTree<T> {
         }
 
     }
+
+    //求一棵树高度
+    public int maxDepth(TreeNode<T> root)
+    {
+        if(root==null)
+            return 0;
+        int leftDep=maxDepth(root.left);
+        int rightDep=maxDepth(root.right);
+       return Math.max(leftDep, rightDep)+1;
+
+    }
+
     public static void main(String[] ss){
         MyBinaryTree t=new MyBinaryTree();
         Integer [] arr=new Integer[]{1,2,3,null,4,null, 5};
@@ -100,5 +113,6 @@ public class MyBinaryTree<T> {
         t.printTreeLevel(ret);
         t.reverseTree(ret);
         t.printTreeLevel(ret);
+       System.out.println(t.maxDepth(ret));
     }
 }
