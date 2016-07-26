@@ -80,6 +80,7 @@ public class ReverseLinkedList<T> {
         }
         System.out.println();
     }
+
     public LinkNode<T> reverseLink(){
         LinkNode<T> pre=head;
         LinkNode<T> p=pre.next;
@@ -146,7 +147,7 @@ return secondHead;
 
     }
 
-    public LinkNode<T> swichPair(){
+    public LinkNode<T> switchPair(){
         LinkNode<T> pre=head;
         LinkNode<T> p=pre.next;
         LinkNode<T> next=null;
@@ -172,7 +173,7 @@ return secondHead;
         ReverseLinkedList t=new ReverseLinkedList();
         LinkNode head= LinkNode.arrayToList(arr);
         t.print();
-       // t.reversePrint();
+
        // System.out.println("iteratePrint");
      //  t.iteratePrint(head.next);
      //  LinkNode inVhead=t.reverseLink();
