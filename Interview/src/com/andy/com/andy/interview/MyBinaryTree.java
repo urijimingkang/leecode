@@ -89,7 +89,7 @@ public class MyBinaryTree<T> {
             TreeNode<T> tmp = root.left;
             root.left = root.right;
             root.right = tmp;
-
+            reverseTree(root.left);
         }
 
     }
@@ -97,6 +97,8 @@ public class MyBinaryTree<T> {
         MyBinaryTree t=new MyBinaryTree();
         Integer [] arr=new Integer[]{1,2,3,null,4,null, 5};
         TreeNode ret=  t.arrayToList(arr);
-        t.printTreePre(ret);
+        t.printTreeLevel(ret);
+        t.reverseTree(ret);
+        t.printTreeLevel(ret);
     }
 }
