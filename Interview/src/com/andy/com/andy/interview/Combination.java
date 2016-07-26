@@ -2,11 +2,11 @@ package com.andy.com.andy.interview;
 import java.util.*;
 
 /**
- * Created by aweng on 7/26/2016.
+ * Created by aweng on 7/26/2016. 组合问题
  */
 public class Combination {
     int num;
-    public  void Combination(String ss,int num,LinkedList sub){
+    public void Combination(String ss,int num,LinkedList sub){
 
         if(num==0){
             for(int i=0;i<sub.size();i++){

@@ -81,6 +81,18 @@ public class MyBinaryTree<T> {
         createTree(root,array);
         return root;
     }
+    //对称翻转一棵二叉树
+    public void reverseTree(TreeNode<T> root)
+    {
+        if(root!=null) {
+            reverseTree(root.left);
+            TreeNode<T> tmp = root.left;
+            root.left = root.right;
+            root.right = tmp;
+
+        }
+
+    }
     public static void main(String[] ss){
         MyBinaryTree t=new MyBinaryTree();
         Integer [] arr=new Integer[]{1,2,3,null,4,null, 5};
