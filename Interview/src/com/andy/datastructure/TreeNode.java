@@ -59,13 +59,19 @@ public class TreeNode<T> {
         }
 
     }
-    static int i=0;
-    public  Queue queue=new LinkedList<T>();
+
+
 
     //比较有创意的层序遍历，创建二叉树 //int []arr=[1,2,3,null,4,null, 5]，数组顺序是刚好层序遍历的次序，2 和3为1的子节点
+    static int i=0;
     public void  createTree(TreeNode root,T[] array){
+          Queue queue=new LinkedList<T>();
         TreeNode tmp1,tmp2;
-        
+        if(i==0){
+            queue.offer(root);
+            i++;
+        }
+
         while(!queue.isEmpty()&&i<array.length){
             if(i<array.length&&array[i]!=null)
                 tmp1=new TreeNode(array[i]);else
@@ -77,7 +83,7 @@ public class TreeNode<T> {
             TreeNode<T> node=(TreeNode<T>)queue.poll();
             node.left=tmp1;
             node.right=tmp2;
-          //  System.out.println(node.data);
+      
             if(node.left!=null){
                 queue.offer(node.left);
             }
@@ -90,8 +96,7 @@ public class TreeNode<T> {
     public  TreeNode arrayToList(T[] array){   //int []arr=[1,2,3,null,4,null, 5]
 
         TreeNode root=new TreeNode(array[0]);
-        queue.offer(root);
-        i++;
+
         createTree(root,array);
         return root;
     }
