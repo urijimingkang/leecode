@@ -55,7 +55,10 @@ public class ReverseLinkedList<T> {
 
 
         if(p!=null&&p.data!=null) {
-            System.out.print(p.data + " ");
+            if(p.next!=null)
+            System.out.print(p.data + "->");
+            else
+                System.out.print(p.data );
             iteratePrint(p = p.next);
         }
 
@@ -75,7 +78,11 @@ public class ReverseLinkedList<T> {
         }
         while(!mystack.isEmpty())
         {
-            System.out.print(mystack.pop());
+            if(mystack.size()>1)
+            System.out.print(mystack.pop()+"->");
+            else
+                System.out.print(mystack.pop());
+
 
         }
         System.out.println();
@@ -95,8 +102,7 @@ public class ReverseLinkedList<T> {
            p=next;
 
         }
-        head.next=null;
-       // head.next=pre;
+        head.next.next=null;
         return pre;
 
     }
@@ -105,7 +111,7 @@ public class ReverseLinkedList<T> {
         LinkNode<T> p=pre.next;
         LinkNode<T> next=null;
 
-int i=0;
+        int i=0;
         while(p!=null&&i<n)
         {i++;
             next=p.next;
@@ -114,36 +120,9 @@ int i=0;
             p=next;
 
         }
-        head.next=null;
 
+start.next=p;
         return pre;
-
-    }
-
-    public LinkNode<T>  reverseLinkAtPosition(LinkNode start,int k){ // 1->2->3->4->5->6 k=2  =>3->4->5->6->1->2
-        LinkNode<T> p=start;
-        LinkNode<T> secondHead=null;
-        LinkNode<T> secondEnd=null;
-        LinkNode<T> firstHead=p;
-        LinkNode<T> firstEnd=null;
-      int i=1;
-        while(i<k)
-        {
-            p=p.next;
-            i++;
-        }
-        secondHead=p.next;
-        secondEnd=secondHead;
-        firstEnd=p;
-
-        while(secondEnd.next!=null){
-
-            secondEnd=secondEnd.next;
-        }
-        secondEnd.next=firstHead;//第二个表的尾部连着第一个表的头
-        firstEnd.next=null;
-
-return secondHead;
 
     }
 
@@ -161,7 +140,7 @@ return secondHead;
             p=next;
 
         }
-        head.next=null;
+        //head.next=null;
         // head.next=pre;
         return pre;
 
@@ -169,18 +148,19 @@ return secondHead;
 
 
     public static void main(String [] args){
-        int[] arr=new int[]{1,2,3,4,5,6};
+        Integer[] arr=new Integer[]{1,2,3,4,5,6};
         ReverseLinkedList t=new ReverseLinkedList();
-        LinkNode head= LinkNode.arrayToList(arr);
-        t.print();
 
-       // System.out.println("iteratePrint");
-     //  t.iteratePrint(head.next);
-     //  LinkNode inVhead=t.reverseLink();
-     //   System.out.println( "reverseLink and then iteratePrint");
-      //  t.iteratePrint(inVhead);
-       LinkNode tmpNode= t.reverseLinkAtPosition(head,2);
-        LinkNode.printList(tmpNode);
-        t.print();
+        LinkNode head= t.arrayToLinkedList(arr);
+        t.iteratePrint(head.next);
+
+        LinkNode inVhead=null;
+
+        inVhead =t.reverseLink();
+        t.iteratePrint(inVhead);
+
+/*       inVhead=t.reverseLink(head.next,3);
+        t.iteratePrint(inVhead);*/
+
     }
 }
