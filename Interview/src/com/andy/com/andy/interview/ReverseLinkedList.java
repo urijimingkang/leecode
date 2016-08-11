@@ -121,7 +121,7 @@ public class ReverseLinkedList<T> {
 
         }
 
-start.next=p;
+        start.next=p;
         return pre;
 
     }
@@ -151,16 +151,17 @@ start.next=p;
         Integer[] arr=new Integer[]{1,2,3,4,5,6};
         ReverseLinkedList t=new ReverseLinkedList();
 
-        LinkNode head= t.arrayToLinkedList(arr);
+        LinkNode head= t.arrayToLinkedList(arr);  //注意这里的head为哨兵节点
         t.iteratePrint(head.next);
 
         LinkNode inVhead=null;
 
-        inVhead =t.reverseLink();
+        inVhead =t.reverseLink();      //反转列表
         t.iteratePrint(inVhead);
 
-/*       inVhead=t.reverseLink(head.next,3);
-        t.iteratePrint(inVhead);*/
+        head= t.arrayToLinkedList(arr);
+       inVhead=t.reverseLink(head.next,3);//反转从head开始的部分链表 1->2->3->4->5->6  4->3->2->1->5->6
+        t.iteratePrint(inVhead);
 
     }
 }
