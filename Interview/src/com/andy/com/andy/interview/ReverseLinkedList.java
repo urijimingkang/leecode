@@ -166,6 +166,7 @@ public class ReverseLinkedList<T> {
     }
     /**
      * 链表反转，递归算法
+
      */
     public LinkNode<T> reverseListRecursive(LinkNode<T> head){
         if(head==null||head.next==null){
@@ -176,6 +177,10 @@ public class ReverseLinkedList<T> {
             return tail;
         }
     }
+    /*
+    *  * notice: 1)tail is the last node ,and will be returned for each Recursive
+     *         2) next.next=p; should be after  tail=reverseRecursive(next);
+    */
     public LinkNode<T> reverseRecursive(LinkNode<T> p)
     {
         if(p.next==null)
