@@ -164,6 +164,28 @@ public class ReverseLinkedList<T> {
         return start.next;
 
     }
+    /**
+     * 链表反转，递归算法
+     */
+    public LinkNode<T> reverseListRecursive(LinkNode<T> head){
+        if(head==null||head.next==null){
+            return head;
+        }else{
+            LinkNode<T> tail=reverseRecursive(head);
+            head.next=null;
+            return tail;
+        }
+    }
+    public LinkNode<T> reverseRecursive(LinkNode<T> p)
+    {
+        if(p.next==null)
+            return p;
+
+        LinkNode<T> next=p.next;
+        LinkNode<T> tail=reverseRecursive(next);
+        next.next=p;
+        return tail;
+    }
 
     public LinkNode<T> switchPair(){
         LinkNode<T> pre=head;
@@ -206,8 +228,10 @@ public class ReverseLinkedList<T> {
         inVhead=t.reverseLink(head,3,5);//反转从m开始到n的部分链表 1->2->3->4->5->6  1->2->5->4->3->6 ,这里的head本身就是哨兵节点，
                                         // 所以reverseLink函数里面first可以直接等于head，而不需要想subvoid老师那样new一个哨兵节点。
                                         // first=2,top=3
+        t.iteratePrint(inVhead);
 
-
+        head= t.arrayToLinkedList(arr);
+        inVhead=t.reverseListRecursive(head.next);
         t.iteratePrint(inVhead);
 
     }
