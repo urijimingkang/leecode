@@ -132,6 +132,38 @@ public class ReverseLinkedList<T> {
         return pre;
 
     }
+//反转指定部分链表
+    public LinkNode<T> reverseLink(LinkNode<T> start,int m,int n){
+        LinkNode<T> first=start;
+
+    if(start==null||start.next==null||m>=n)
+    return start;
+
+
+        int i=1;
+        while(i<m)
+        {
+            i++;
+            first=first.next;
+        }
+        LinkNode<T> pre=first.next;
+        LinkNode<T> top=first.next;//top不动
+        LinkNode<T> p=pre.next;
+        LinkNode<T> next=null;
+        while(p!=null&&i<n)
+        {i++;
+            next=p.next;
+            p.next=pre;
+            pre=p;
+            p=next;
+
+        }
+
+        top.next=p;
+        first.next=pre;
+        return start.next;
+
+    }
 
     public LinkNode<T> switchPair(){
         LinkNode<T> pre=head;
@@ -168,6 +200,14 @@ public class ReverseLinkedList<T> {
 
         head= t.arrayToLinkedList(arr);
        inVhead=t.reverseLink(head.next,3);//反转从head开始的部分链表 1->2->3->4->5->6  4->3->2->1->5->6
+        t.iteratePrint(inVhead);
+
+        head= t.arrayToLinkedList(arr);
+        inVhead=t.reverseLink(head,3,5);//反转从m开始到n的部分链表 1->2->3->4->5->6  1->2->5->4->3->6 ,这里的head本身就是哨兵节点，
+                                        // 所以reverseLink函数里面first可以直接等于head，而不需要想subvoid老师那样new一个哨兵节点。
+                                        // first=2,top=3
+
+
         t.iteratePrint(inVhead);
 
     }
