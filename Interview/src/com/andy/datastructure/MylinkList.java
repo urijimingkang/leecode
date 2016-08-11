@@ -74,7 +74,7 @@ public class MylinkList<T> {
             pre=pre.next;
         }
         LinkNode<T> node=new LinkNode<T>(data);
-        node.next=pre.next;
+        node.next=pre.next;  //在index之后的节点插入
         pre.next=node;
         size++;
     }
