@@ -11,7 +11,7 @@ public class ReverseLinkedList<T> {
 
  private LinkNode<T> next;
     private int size=0;
-    private LinkNode<T> head=new LinkNode<T>(null,null);
+    private LinkNode<T> head=new LinkNode<T>(null,null);   //哨兵节点，重要；这样pre节点就必修指向head.next.其他有的书上没有这个，那么后面的所有pre都要改动
     public int getLen(){
          LinkNode<T> p=head;
         int i=0;
@@ -54,17 +54,17 @@ public class ReverseLinkedList<T> {
 
 
 
-        if(p!=null&&p.data!=null) {
+        if(p!=null) {
             if(p.next!=null)
             System.out.print(p.data + "->");
             else
-                System.out.print(p.data );
-            iteratePrint(p = p.next);
+                System.out.println(p.data );
+
+            iteratePrint(p.next);
         }
 
 
 
-        System.out.println();
 
 
     }
@@ -88,8 +88,8 @@ public class ReverseLinkedList<T> {
         System.out.println();
     }
 
-    public LinkNode<T> reverseLink(){
-        LinkNode<T> pre=head;
+    public LinkNode<T> reverseLink(LinkNode<T> head){
+        LinkNode<T> pre=head.next;
         LinkNode<T> p=pre.next;
         LinkNode<T> next=null;
 
@@ -193,7 +193,9 @@ public class ReverseLinkedList<T> {
     }
 
     public LinkNode<T> switchPair(){
-        LinkNode<T> pre=head;
+     //   LinkNode<T> zero=new LinkNode<T>(null);
+        LinkNode<T> zero=head;
+        LinkNode<T> pre=head.next;
         LinkNode<T> p=pre.next;
         LinkNode<T> next=null;
 
@@ -202,13 +204,19 @@ public class ReverseLinkedList<T> {
         {
             next=p.next;
             p.next=pre;
-            pre=p;
-            p=next;
+            pre.next=next;
+            zero.next=p;
+            if(next==null)break;
+            else{
+                zero=pre;
+                pre=next;
+                p=pre.next;
+            }
 
         }
         //head.next=null;
         // head.next=pre;
-        return pre;
+        return head;
 
     }
 
@@ -218,17 +226,17 @@ public class ReverseLinkedList<T> {
         ReverseLinkedList t=new ReverseLinkedList();
 
         LinkNode head= t.arrayToLinkedList(arr);  //注意这里的head为哨兵节点
-        t.iteratePrint(head.next);
+      //  t.iteratePrint(head.next);
+
 
         LinkNode inVhead=null;
-
-        inVhead =t.reverseLink();      //反转列表
+      inVhead =t.reverseLink(head);      //反转列表
         t.iteratePrint(inVhead);
 
         head= t.arrayToLinkedList(arr);
        inVhead=t.reverseLink(head.next,3);//反转从head开始的部分链表 1->2->3->4->5->6  4->3->2->1->5->6
         t.iteratePrint(inVhead);
-
+/*
         head= t.arrayToLinkedList(arr);
         inVhead=t.reverseLink(head,3,5);//反转从m开始到n的部分链表 1->2->3->4->5->6  1->2->5->4->3->6 ,这里的head本身就是哨兵节点，
                                         // 所以reverseLink函数里面first可以直接等于head，而不需要想subvoid老师那样new一个哨兵节点。
@@ -237,7 +245,11 @@ public class ReverseLinkedList<T> {
 
         head= t.arrayToLinkedList(arr);
         inVhead=t.reverseListRecursive(head.next);
-        t.iteratePrint(inVhead);
+        t.iteratePrint(inVhead);*/
+
+  /*      head= t.arrayToLinkedList(arr);
+        inVhead=t.switchPair();
+        t.iteratePrint(inVhead.next);*/
 
     }
 }
