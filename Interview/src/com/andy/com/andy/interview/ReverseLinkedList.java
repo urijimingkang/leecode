@@ -106,6 +106,13 @@ public class ReverseLinkedList<T> {
         return pre;
 
     }
+    /**
+     * 回顾链表的reverseLink(start,n) 方法，注意start是从意义的开始节点，即传入head.next…
+     …,因为ReverseLinkedList的类head为无意义的哨兵节点。
+
+     代码实现最后，要注意start.next=p,以保持反转部分与原来的部分保持连接
+     */
+
     public LinkNode<T> reverseLink(LinkNode<T> start,int n){
         LinkNode<T> pre=start;
         LinkNode<T> p=pre.next;
