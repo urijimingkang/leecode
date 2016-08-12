@@ -50,15 +50,11 @@ public class ReverseLinkedList<T> {
 
     }
     public void iteratePrint(LinkNode<T> p){
-
-
-
-
         if(p!=null) {
             if(p.next!=null)
             System.out.print(p.data + "->");
             else
-                System.out.println(p.data );
+                System.out.println(p.data);
 
             iteratePrint(p.next);
         }
@@ -204,11 +200,14 @@ public class ReverseLinkedList<T> {
         {
             next=p.next;
             p.next=pre;
-            pre.next=next;
-            zero.next=p;
+            pre.next=next;              //pre是跨两个跳跃
+            zero.next=p;                //zero 是
             if(next==null)break;
             else{
-                zero=pre;
+                zero=pre;  //be carefull pre now is exchanged with p ,例如，第一次， 1-》   2-》  3-》   4     -》5， pre现在指向2，
+                                                                             //   zero   pre   p     next
+                                                                           // 变成1 -》  3-》   2-》  -> 4   -》5  ->6  后 ,2就在4前面，刚好就是zero下次要的值
+                                                                                          //   zero   pre   p   next
                 pre=next;
                 p=pre.next;
             }
@@ -236,20 +235,21 @@ public class ReverseLinkedList<T> {
         head= t.arrayToLinkedList(arr);
        inVhead=t.reverseLink(head.next,3);//反转从head开始的部分链表 1->2->3->4->5->6  4->3->2->1->5->6
         t.iteratePrint(inVhead);
-/*
+
         head= t.arrayToLinkedList(arr);
         inVhead=t.reverseLink(head,3,5);//反转从m开始到n的部分链表 1->2->3->4->5->6  1->2->5->4->3->6 ,这里的head本身就是哨兵节点，
-                                        // 所以reverseLink函数里面first可以直接等于head，而不需要想subvoid老师那样new一个哨兵节点。
+        t.iteratePrint(inVhead);        // 所以reverseLink函数里面first可以直接等于head，而不需要想subvoid老师那样new一个哨兵节点。
                                         // first=2,top=3
-        t.iteratePrint(inVhead);
+
+
 
         head= t.arrayToLinkedList(arr);
         inVhead=t.reverseListRecursive(head.next);
-        t.iteratePrint(inVhead);*/
+        t.iteratePrint(inVhead);
 
-  /*      head= t.arrayToLinkedList(arr);
+        head= t.arrayToLinkedList(arr);
         inVhead=t.switchPair();
-        t.iteratePrint(inVhead.next);*/
+        t.iteratePrint(inVhead.next);
 
     }
 }
