@@ -32,9 +32,10 @@ public class MyConsumeProduceThread {
             this.count=count;
         }
         public void run() {
-while(true)
-{count.get();}
-
+            while(true)
+            {
+                count.get();
+            }
 
         }
     }
@@ -45,7 +46,9 @@ while(true)
         }
         public void run(){
             while(true)
-            {count.set();}
+            {
+                count.set();
+            }
         }
     }
     class MyInteger2 {
@@ -55,12 +58,11 @@ while(true)
             this.num=num;
         }
         public void  get(){
-            synchronized (this) { while(num<=0) {
-
+            synchronized (this) {
+                while(num<=0) {
                 try {
                     //   Thread.sleep(5);
                     wait();
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
