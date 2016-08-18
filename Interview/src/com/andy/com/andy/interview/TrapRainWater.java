@@ -61,9 +61,9 @@ public class TrapRainWater {
 
     public static void main(String []ss)
     {
-
-        int array[]={0,1,0,2,1,0,1,0,2,1,2,1};
-      //  int array[]={2,5,1,2,3,4,7,7,6};
+    // int array[]={0,1,0,2,1,0,1,3,2,1,2,1};
+       // int array[]={2,5,1,2,3,4,7,7,6};
+         int array[]={2,5,1,3,1,2,1,7,7,6};
         // vector<int> vec(array,array+sizeof(array)/sizeof(int));
 
         System.out.println(TrapRainWater(array));
