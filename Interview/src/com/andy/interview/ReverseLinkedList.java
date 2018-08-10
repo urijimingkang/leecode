@@ -1,6 +1,5 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 import com.andy.datastructure.*;
-import sun.awt.image.ImageWatched;
 
 import java.util.*;
 

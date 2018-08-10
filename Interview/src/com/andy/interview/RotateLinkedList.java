@@ -1,8 +1,6 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 
 import com.andy.datastructure.LinkNode;
-
-import java.util.Stack;
 
 /**
  * Created by aweng on 7/6/2016.

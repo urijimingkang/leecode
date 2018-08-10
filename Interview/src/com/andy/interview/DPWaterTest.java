@@ -1,4 +1,4 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 
 /**
  * Created by aweng on 8/17/2016.

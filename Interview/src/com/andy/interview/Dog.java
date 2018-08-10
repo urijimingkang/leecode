@@ -1,4 +1,4 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 
 class Dog implements Comparable<Dog>{
 	int size;

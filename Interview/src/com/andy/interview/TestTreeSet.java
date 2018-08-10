@@ -1,4 +1,4 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 
 import java.util.Iterator;
 import java.util.TreeSet;

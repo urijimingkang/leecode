@@ -1,4 +1,4 @@
-package com.andy.com.andy.interview;
+package com.andy.interview;
 
 import java.util.Date;
 public final class BrokenPerson

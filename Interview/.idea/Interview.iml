@@ -4,12 +4,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/andy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/andy/com" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/andy/concurrency" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/andy/datastructure" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/andy/thread" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

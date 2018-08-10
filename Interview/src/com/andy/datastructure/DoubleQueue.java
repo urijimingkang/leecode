@@ -3,16 +3,16 @@ package com.andy.datastructure;
 /**
  * Created by aweng on 6/30/2016.
  */
-public class MyQueue<T> {
+public class DoubleQueue<T> {
     private LinkNode<T>  head;
     private LinkNode<T> last;
     private int size;
-    public MyQueue(){
+    public DoubleQueue(){
         head=new LinkNode<T>(null,null);
         last=head;
     }
 
-    public void offer(T data){
+    public void offer(T data){//添加到队尾部
         LinkNode<T> tmp=new LinkNode<T>(data);
         last.next=tmp;
         last=tmp;
@@ -24,7 +24,7 @@ public class MyQueue<T> {
     public  T peek(){
         return size==0?null:head.next.data;
     }
-    public T poll(){
+    public T poll(){//从头取元素
         if(isEmpty()){
             return null;
         }
@@ -42,9 +42,9 @@ public class MyQueue<T> {
 
     }
     public static void main(String[]as){
-        MyQueue<Integer> myQueue=new MyQueue<Integer>();
+        DoubleQueue<Integer> myQueue=new DoubleQueue<Integer>();
 
-        for(int i=0;i<1000000;i++)
+        for(int i=0;i<10;i++)
         {myQueue.offer(i);
 
         }

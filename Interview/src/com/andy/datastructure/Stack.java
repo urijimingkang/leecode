@@ -3,7 +3,7 @@ package com.andy.datastructure;
 /**
  * Created by aweng on 6/30/2016.
  */
-public class Mystack<T> {
+public class Stack<T> {
     private int size=0;                  //  |  |<-size=2  始终指向栈顶再往上面一格为空的位置
                                          //  | 1|->1
                                          //  | 2|->0
@@ -39,7 +39,7 @@ public class Mystack<T> {
         return size==0;
     }
     public static  void main(String[] as){
-        Mystack<Integer> mystack=new Mystack<Integer>();
+        Stack<Integer> mystack=new Stack<Integer>();
         mystack.push(1);
         mystack.push(2);
         mystack.push(3);
