@@ -28,6 +28,9 @@ public class Stack<T> {
         return t;
 
     }
+    public int size(){
+        return size;
+    }
     public Object peek()
     {
         if(size==0)

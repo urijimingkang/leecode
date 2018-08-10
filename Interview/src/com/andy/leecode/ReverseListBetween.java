@@ -2,7 +2,7 @@ package com.andy.leecode;
 
 import com.andy.datastructure.LinkNode;
 
-public class ReverseLisBetween {
+public class ReverseListBetween {
 
     public static void main(String[]ss){
         int[] a=new int[]{1,2,3,4};

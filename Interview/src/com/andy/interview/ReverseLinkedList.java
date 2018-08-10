@@ -1,5 +1,6 @@
 package com.andy.interview;
 import com.andy.datastructure.*;
+import com.andy.datastructure.Stack;
 
 import java.util.*;
 
@@ -65,7 +66,7 @@ public class ReverseLinkedList<T> {
     }
     public void reversePrint(){
         LinkNode<T> p=head.next;
-        Stack<T> mystack=new Stack<T>();
+       Stack<T> mystack=new Stack<T>();
         while(p!=null)
         {
             mystack.push(p.data);
