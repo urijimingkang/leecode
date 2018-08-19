@@ -24,6 +24,14 @@ public class MyBinaryTree<T> {
             printTreeIn(root.right);
         }
     }
+    public void printTreePro(TreeNode root)
+    {
+        if(root!=null) {
+            printTreePro(root.left);
+            printTreePro(root.right);
+            System.out.println(root.data);
+        }
+    }
     public void printTreeLevel(TreeNode root)
     {  Queue queue=new LinkedList<T>();
         queue.offer(root);
@@ -109,9 +117,10 @@ public class MyBinaryTree<T> {
         MyBinaryTree t=new MyBinaryTree();
         Integer [] arr=new Integer[]{1,2,3,null,4,null, 5};
         TreeNode ret=  t.arrayToList(arr);
-        t.printTreeLevel(ret);
-        t.reverseTree(ret);
-        t.printTreeLevel(ret);
+        t.printTreePre(ret);
+      //  t.printTreeLevel(ret);
+      //  t.reverseTree(ret);
+      //  t.printTreeLevel(ret);
        System.out.println(t.maxDepth(ret));
     }
 }
