@@ -14,12 +14,12 @@ public class TreeTraversal<T> {
 
  public static void main(String[] ss){
   TreeTraversal t=new TreeTraversal();
-  Integer [] arr=new Integer[]{1,2,3};
+  Integer [] arr=new Integer[]{1,3,2,null,4,null, 5};
   TreeNode ret=  t.arrayToList(arr);
   System.out.println(maxDepth(ret));
  // levelOrder(ret);
  }
- public static int maxDepth(TreeNode root){
+public static int maxDepth(TreeNode root){
   int dep=0;
   if(root!=null) {
    dep=Math.max(maxDepth(root.left),maxDepth(root.right))+1;
