@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d29c-9c92-40f9-be0b-364a489f68fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/MaxStockProfit.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/AbstractGraph.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Graph.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/GraphTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/UnweightedGraph.java" />
-      <change beforePath="$PROJECT_DIR$/Interview/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Interview/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Interview/Interview.iml" afterPath="$PROJECT_DIR$/Interview/Interview.iml" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/Business1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ConditionTest$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ConditionTest$Business.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ConditionTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/Consumer2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/CountDownLatchTest$Business$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/CountDownLatchTest$Business.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/CountDownLatchTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyCondition$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyCondition$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyCondition$MyResource.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyCondition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyConsumeProduceCondition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/MyInteger2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/Producer2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ReentrantReadWriteLockTest$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ReentrantReadWriteLockTest$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/concurrency/ReentrantReadWriteLockTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/datastructure/LinkNode.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/datastructure/LinkNode_v2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/datastructure/TreeNode.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/Business.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/Consumer2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/MyConsumeProduceThread.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/MyInteger.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/MyInteger2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/MyThread.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/Producer2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/ThreadAltermate$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/ThreadAltermate.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/ThreadOne.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/com/andy/thread/ThreadTwo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/leecode/AddTwoNumbers.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/leecode/ListNode.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Interview/output/production/Interview/leecode/TwoSum.class" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/dp/CoinChange.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Dijkstra.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,46 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hello.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MinPathSum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/leecode/MinPathSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/sort/MergeSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoubleQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/datastructure/DoubleQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,8 +28,8 @@
       <file leaf-file-name="AbstractGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/AbstractGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-31">
-              <caret line="142" column="18" lean-forward="false" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="18" />
+            <state relative-caret-position="98">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2211#2212#0" expanded="true" />
@@ -157,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GraphTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/GraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="346">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#805#813#0" expanded="true" />
                 <element signature="e#1463#1483#0" expanded="true" />
@@ -172,11 +93,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interview.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Interview/Interview.iml">
+      <file leaf-file-name="Three_Sum_Closest.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/output/leecode/Three_Sum_Closest.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="-270">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#961#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoSum.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/output/leecode/TwoSum.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#734#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxSubIntergerListSum.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/output/leecode/MaxSubIntergerListSum.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#724#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dijkstra.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Dijkstra.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-947">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding>
+                <element signature="e#2109#2118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinChange.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/dp/CoinChange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.class" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk/jre/lib/rt.jar!/java/lang/Thread.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -215,6 +194,9 @@
         <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/AbstractGraph.java" />
         <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/UnweightedGraph.java" />
         <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/GraphTest.java" />
+        <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Main.java" />
+        <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Dijkstra.java" />
+        <option value="$PROJECT_DIR$/Interview/src/com/andy/newds/dp/CoinChange.java" />
       </list>
     </option>
   </component>
@@ -225,10 +207,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1586" />
-    <option name="y" value="113" />
-    <option name="width" value="673" />
-    <option name="height" value="555" />
+    <option name="x" value="1024" />
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,40 +249,13 @@
             <path>
               <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="andy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="andy" type="462c0819:PsiDirectoryNode" />
-              <item name="leecode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="leecode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interview" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Interview" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leecode" type="b2602c69:ProjectViewProjectNode" />
@@ -339,13 +294,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GraphTest">
+  <component name="RunManager" selected="Application.CoinChange">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.andy.newds.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.andy.newds.dp.CoinChange" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Interview" />
+      <envs />
+    </configuration>
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.andy.newds.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.andy.newds.graph.Dijkstra" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Interview" />
+      <envs />
     </configuration>
     <configuration name="GraphTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -459,14 +452,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.GraphTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.MergeSort" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Dijkstra" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CoinChange" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.GraphTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MergeSort" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.CoinChange" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Dijkstra" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GraphTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +483,7 @@
       <workItem from="1533796870479" duration="49000" />
       <workItem from="1534640059056" duration="24000" />
       <workItem from="1534640168602" duration="187000" />
-      <workItem from="1540433142878" duration="2467000" />
+      <workItem from="1540433142878" duration="6262000" />
     </task>
     <task id="LOCAL-00001" summary="ready for autonomic">
       <created>1534640350816</created>
@@ -499,7 +496,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2727000" />
+    <option name="totallyTimeSpent" value="6522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="27" width="1366" height="741" extended-state="6" />
@@ -513,19 +510,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10745234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3136915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27902946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14264037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.284522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28596187" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26516464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -565,12 +562,27 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>dp[i- a[j] ]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i- a[j]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dp[i- a[j] ] + 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>graph1</expression-string>
         <language-id>JAVA</language-id>
@@ -661,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/AbstractGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="142" column="18" lean-forward="false" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="18" />
+        <state relative-caret-position="98">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2211#2212#0" expanded="true" />
@@ -694,14 +706,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/GraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="346">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#805#813#0" expanded="true" />
             <element signature="e#1463#1483#0" expanded="true" />
             <element signature="e#1779#1787#0" expanded="true" />
             <element signature="e#2783#2792#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/output/leecode/Three_Sum_Closest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/output/leecode/TwoSum.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/output/leecode/MaxSubIntergerListSum.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk/jre/lib/rt.jar!/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/graph/Dijkstra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-947">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#2109#2118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interview/src/com/andy/newds/dp/CoinChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
