@@ -1,4 +1,4 @@
-package leecode;
+package com.andy.leecode;
 
 public class MaxSubIntergerListSum {
     public static void main(String[]ss){
@@ -10,10 +10,7 @@ public class MaxSubIntergerListSum {
         int tmp_sum=0;
         for(int i=0;i<a.length;i++){
             tmp_sum+=a[i];
-            if(tmp_sum>max)
-                max=tmp_sum;
-            if(tmp_sum<0)
-                tmp_sum=0;
+          max=Math.max(max,tmp_sum);
         }
 
         return max;
