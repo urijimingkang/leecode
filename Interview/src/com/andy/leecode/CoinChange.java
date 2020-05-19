@@ -4,7 +4,7 @@ public class CoinChange {
     public static void main(String[] ss){
         int amount =5;
         int[] coins=new int[]{1,2,3};
-        change(5,coins);
+        System.out.println(change(5,coins));
     }
     public static int change(int amount, int[] coins) {
         if (coins == null || coins.length == 0) {

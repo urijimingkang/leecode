@@ -5,7 +5,7 @@ public class CoinChange2 {
     public static  void  main(String[]ss)
     {
         int[] a= new int[]{1,3,5};
-        int sum = 6;
+        int sum = 5;
         int cent = 0;
         int[] dp=new int[sum+1];
         dp[0] = 0;
