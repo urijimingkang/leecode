@@ -1,4 +1,4 @@
-package com.andy.concurrency;
+package com.andy.thread.concurrency;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class ReentrantReadWriteLockTest {

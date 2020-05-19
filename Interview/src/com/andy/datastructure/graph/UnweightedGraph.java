@@ -1,4 +1,4 @@
-package com.andy.newds.graph;
+package com.andy.datastructure.graph;
 
 import java.util.List; /*
  *    具体类 UnweightedGraph

@@ -1,4 +1,4 @@
-package com.andy.newds.sort;
+package com.andy.datastructure.sort;
 
 public class Sort {
     public static int[] bubbleSort(int[] input ){

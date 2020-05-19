@@ -1,4 +1,4 @@
-package com.andy.concurrency;
+package com.andy.thread.concurrency;
 
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;

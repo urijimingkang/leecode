@@ -1,4 +1,4 @@
-package com.andy.concurrency;
+package com.andy.thread.concurrency;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

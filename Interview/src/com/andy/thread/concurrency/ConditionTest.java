@@ -1,4 +1,4 @@
-package com.andy.concurrency;
+package com.andy.thread.concurrency;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -12,13 +12,13 @@ public class ConditionTest {
         new Thread() {
             @Override
             public void run() {
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < 2; i++) {
                     business.subThread();
                 }
             }
         }.start();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             business.mainThread();
         }
     }
@@ -40,7 +40,7 @@ public class ConditionTest {
                         e.printStackTrace();
                     }
                 }
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < 5; i++) {
                     System.out.println("mainThread  " + i);
                 }
                 flag = true;
@@ -62,7 +62,7 @@ public class ConditionTest {
                         e.printStackTrace();
                     }
                 }
-                for (int i = 0; i < 50; i++) {
+                for (int i = 0; i < 3; i++) {
                     System.out.println("subThread  " + i);
                 }
                 flag = false;

@@ -1,4 +1,4 @@
-package com.andy.newds.graph;
+package com.andy.datastructure.graph;
 
 import java.util.*;
 

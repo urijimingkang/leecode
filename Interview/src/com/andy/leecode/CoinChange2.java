@@ -1,6 +1,6 @@
-package com.andy.newds.dp;
+package com.andy.leecode;
 
-public class CoinChange {
+public class CoinChange2 {
 
     public static  void  main(String[]ss)
     {

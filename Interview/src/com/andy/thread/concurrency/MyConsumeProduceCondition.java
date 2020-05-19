@@ -1,4 +1,4 @@
-package com.andy.concurrency;
+package com.andy.thread.concurrency;
 
 /**
  * Created by aweng on 6/27/2016.
