@@ -1,10 +1,24 @@
 package com.andy.leecode;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.*;
+
 public class CoinChangeWithLeastCombinationOutput {
-    public static void main(String[] ss){
-        int amount =11;
-        int[] coins=new int[]{1,2,5,6};
-        System.out.println(change(5,coins));
+    public static void main(String[] ss) throws Exception{
+       // int amount =11;
+       // int[] coins=new int[]{1,2,5,6};
+        //System.out.println(change(5,coins));
+        Lock  l=new ReentrantLock();
+        if(l.tryLock(1000, TimeUnit.MILLISECONDS))
+        {
+            try {
+                l.lock();
+                System.out.println("ads");
+            }finally{
+                l.unlock();
+        }
+
+        }
     }
     public static int change(int amount, int[] coins) {
         int [][] T=new int[coins.length][amount];
