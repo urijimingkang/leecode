@@ -5,10 +5,10 @@ import java.util.concurrent.locks.*;
 
 public class CoinChangeWithLeastCombinationOutput {
     public static void main(String[] ss) throws Exception{
-       // int amount =11;
-       // int[] coins=new int[]{1,2,5,6};
-        //System.out.println(change(5,coins));
-        Lock  l=new ReentrantLock();
+        int amount =110;
+        int[] coins=new int[]{1,2,5};
+        System.out.println(change(amount,coins));
+       /* Lock  l=new ReentrantLock();
         if(l.tryLock(1000, TimeUnit.MILLISECONDS))
         {
             try {
@@ -16,9 +16,9 @@ public class CoinChangeWithLeastCombinationOutput {
                 System.out.println("ads");
             }finally{
                 l.unlock();
-        }
+             }
 
-        }
+        }*/
     }
     public static int change(int amount, int[] coins) {
         int [][] T=new int[coins.length][amount];

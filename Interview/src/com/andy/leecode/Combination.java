@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Combination {
     public static void main(String []ss){
-String str="";
+String str="abc";
 System.out.println(combination(str));
     }
     public static void swap(char a,char b){
