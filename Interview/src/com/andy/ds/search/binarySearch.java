@@ -1,4 +1,4 @@
-package com.andy.datastructure.search;
+package com.andy.ds.search;
 
 public class binarySearch {
     public static void main(String[] aa){

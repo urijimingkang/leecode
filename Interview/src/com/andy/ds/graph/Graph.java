@@ -1,4 +1,4 @@
-package com.andy.datastructure.graph;
+package com.andy.ds.graph;
 
 import java.util.List;
 

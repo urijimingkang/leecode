@@ -1,7 +1,5 @@
 package com.andy.leecode;
 
-import com.andy.datastructure.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

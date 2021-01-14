@@ -1,8 +1,6 @@
 package com.andy.interview;
-import com.andy.datastructure.*;
-import com.andy.datastructure.Stack;
-
-import java.util.*;
+import com.andy.ds.*;
+import com.andy.ds.Stack;
 
 /**
  * Created by aweng on 7/6/2016.

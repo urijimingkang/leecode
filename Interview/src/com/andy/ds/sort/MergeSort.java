@@ -1,4 +1,4 @@
-package com.andy.datastructure.sort;
+package com.andy.ds.sort;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.andy.datastructure;
+package com.andy.ds;
 
 /**
  * Created by aweng on 6/30/2016.

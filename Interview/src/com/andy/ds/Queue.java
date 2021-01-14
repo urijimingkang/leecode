@@ -1,18 +1,18 @@
-package com.andy.datastructure;
+package com.andy.ds;
 
 /**
  * Created by aweng on 6/30/2016.
  */
-public class DoubleQueue<T> {
+public class Queue<T> {
     private LinkNode<T>  head;
     private LinkNode<T> last;
     private int size;
-    public DoubleQueue(){
+    public Queue(){
         head=new LinkNode<T>(null,null);
         last=head;
     }
 
-    public void offer(T data){//添加到队尾部
+    public void offer(T data){
         LinkNode<T> tmp=new LinkNode<T>(data);
         last.next=tmp;
         last=tmp;
@@ -24,7 +24,7 @@ public class DoubleQueue<T> {
     public  T peek(){
         return size==0?null:head.next.data;
     }
-    public T poll(){//从头取元素
+    public T poll(){
         if(isEmpty()){
             return null;
         }
@@ -42,9 +42,9 @@ public class DoubleQueue<T> {
 
     }
     public static void main(String[]as){
-        DoubleQueue<Integer> myQueue=new DoubleQueue<Integer>();
+        Queue<Integer> myQueue=new Queue<Integer>();
 
-        for(int i=0;i<10;i++)
+        for(int i=0;i<1000000;i++)
         {myQueue.offer(i);
 
         }

@@ -1,4 +1,4 @@
-package com.andy.datastructure;
+package com.andy.ds;
 
 public class LinkNode<T>{
     //LinkedList t;

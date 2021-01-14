@@ -1,5 +1,5 @@
 package com.andy.interview;
-import com.andy.datastructure.*;
+import com.andy.ds.*;
 
 import java.util.LinkedList;
 import java.util.Queue;

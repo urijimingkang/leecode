@@ -1,7 +1,4 @@
-package com.andy.datastructure;
-
-import java.util.LinkedList;
-import java.util.Queue;
+package com.andy.ds;
 
 /**
  * Created by aweng on 7/26/2016.

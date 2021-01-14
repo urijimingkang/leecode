@@ -1,8 +1,7 @@
 package com.andy.leecode;
 
 
-import com.andy.datastructure.TreeNode;
-import com.andy.interview.MyBinaryTree;
+import com.andy.ds.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -30,7 +29,7 @@ public static int maxDepth(TreeNode root){
  }
 
  public static void levelOrder(TreeNode root){
-  com.andy.datastructure.Queue q=new com.andy.datastructure.Queue();
+  com.andy.ds.Queue q=new com.andy.ds.Queue();
   q.offer(root);
   TreeNode tmp=null;
   while( (tmp=(TreeNode)q.poll())!=null)

@@ -1,7 +1,5 @@
 package com.andy.leecode;
 
-import com.andy.datastructure.LinkNode;
-
 public class ReverseListBetween {
 
     public static void main(String[]ss){
