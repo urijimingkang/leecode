@@ -2,7 +2,7 @@ package com.andy.zju;
 
 public class CircleNumber {
     public static void main(String [] ss){
-        System.out.print("result:"+circleNumber(123));
+        System.out.print("result:"+circleNumber(1534236469));
     }
     static boolean circleNumber(int a){
         int num=0;

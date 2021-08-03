@@ -43,7 +43,7 @@ it.
 
 public class QuickSort {
     public static void main(String[]ss){
-        int []arr =new int[]{1,5,3,8,7,9};
+        int []arr =new int[]{1,5,3,9,8,4};
         QuickSort(arr,0,arr.length-1);
         Arrays.stream(arr).forEach(System.out::println);
     }
@@ -68,10 +68,10 @@ int i= (low - 1) ; // Index of smaller element
             if (arr[j] < pivot)
             {
                 i++;    // increment index of smaller element
-                swap(arr,i, j);
+                swap(arr,i, j);  //这里是交换所有比pivot小的逆序对，比如（5，3）
             }
         }
-        swap (arr,i + 1 ,high);
+        swap (arr,i + 1 ,high); //最后一次交换，这事pivot的左边都比pivot小
         return (i + 1);
     }
     public static void swap(int []arr,int a,int b){

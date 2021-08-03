@@ -10,7 +10,7 @@ public class BubbleSort {
     }
     static void   bubbleSort(int[] a){
         for (int i = 0; i <a.length ; i++) {
-            for (int j = 1; j<i ; j++) {
+            for (int j = 0; j<=i ; j++) {
                 if (a[j] > a[i]) {
                   int tmp=a[i];
                     a[i]=a[j];

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.stream.Stream;
 
-public class AsterriodCollision_leecode735 {
+public class AsterriodCollision735 {
     public static void main(String[] ss){
         int[] test=new int[]{11,9,10, 2,-8,-5, 3};
        int [] ast= asterriod_collision(test);

@@ -3,7 +3,7 @@ package com.andy.leecode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Daily_temp_leecode739 {
+public class DailyTemp739 {
     public static void main(String[] ss){
         int[] test=new int[]{11,9,10, 2,-8,-5, 3};
        int [] ast= daily_temp(test);

@@ -1,7 +1,7 @@
-package com.andy.leecode;
+package com.andy.zju;
 
 public class ListNode {
-    public int val;
+    int val;
     ListNode next;
     ListNode(int x) { val = x; }
 }

@@ -2,7 +2,7 @@ package com.andy.leecode;
 
 import java.util.HashMap;
 
-public class SumOfTwoNumberInArray {
+public class  SumOfTwoNumberInArray {
     public static void main(String[]ss) {
         int[] arr={2,5,7,9};
         int [] ret=findSumK(arr,9);

@@ -3,7 +3,7 @@ package com.andy.leecode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class reverse_linkedlist {
+public class ReverseLinkedlist {
     public static void main(String[] ss){
       //  int[] test=new int[]{11,9,10, 2,-8,-5, 3};
         Mylist node=new Mylist(1);
