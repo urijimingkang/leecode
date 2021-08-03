@@ -122,7 +122,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.andy.zju.*" />
+          <option name="PATTERN" value="com.andy.zju.subset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,13 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubSet (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.andy.zju.SubSet" />
+    <configuration name="SubSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.andy.zju.subset.SubSet" />
       <module name="Interview" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.andy.zju.*" />
+          <option name="PATTERN" value="com.andy.zju.subset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,12 +159,12 @@
       </method>
     </configuration>
     <configuration name="SumSubSet39" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.andy.zju.SumSubSet39" />
+      <option name="MAIN_CLASS_NAME" value="com.andy.zju.subset.SumSubSet39" />
       <module name="Interview" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.andy.zju.*" />
+          <option name="PATTERN" value="com.andy.zju.subset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +173,12 @@
       </method>
     </configuration>
     <configuration name="SumSubSetNoRepeat40" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.andy.zju.SumSubSetNoRepeat40" />
+      <option name="MAIN_CLASS_NAME" value="com.andy.zju.subset.SumSubSetNoRepeat40" />
       <module name="Interview" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.andy.zju.*" />
+          <option name="PATTERN" value="com.andy.zju.subset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
