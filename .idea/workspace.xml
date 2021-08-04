@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ab5d29c-9c92-40f9-be0b-364a489f68fb" name="Default" comment="" />
+    <list default="true" id="7ab5d29c-9c92-40f9-be0b-364a489f68fb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/zju/ValidParentheses20.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ValidParentheses20.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -401,7 +403,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Interview/src/com/andy/zju/ValidParentheses20.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
