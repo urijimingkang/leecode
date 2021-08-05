@@ -35,7 +35,7 @@ public static int maxDepth(TreeNode root){
   while( (tmp=(TreeNode)q.poll())!=null)
   {
 
-   System.out.println(tmp.data);
+   System.out.println(tmp.val);
    if(tmp.left!=null)
    q.offer(tmp.left);
    if(tmp.right!=null)
@@ -47,7 +47,7 @@ public static int maxDepth(TreeNode root){
  }
  public static void preOrder(TreeNode root){
   if(root!=null) {
-   System.out.println(root.data);
+   System.out.println(root.val);
    preOrder(root.left);
    preOrder(root.right);
   }
@@ -55,7 +55,7 @@ public static int maxDepth(TreeNode root){
  public static void inOrder(TreeNode root){
   if(root!=null) {
    inOrder(root.left);
-   System.out.println(root.data);
+   System.out.println(root.val);
 
    inOrder(root.right);
   }
@@ -70,15 +70,15 @@ public static int maxDepth(TreeNode root){
 
   while(!queue.isEmpty()&&i<array.length){
    if(i<array.length&&array[i]!=null)
-    tmp1=new TreeNode(array[i]);
+    tmp1=new TreeNode((Integer) array[i]);
    else
     tmp1=null;
    if((i+1)<array.length&&array[i+1]!=null)
-    tmp2=new TreeNode(array[i+1]);
+    tmp2=new TreeNode((Integer) array[i+1]);
    else
     tmp2=null;
    i+=2;
-   TreeNode<T> node=(TreeNode<T>)queue.poll();
+   TreeNode node=(TreeNode)queue.poll();
    node.left=tmp1;
    node.right=tmp2;
 
@@ -93,7 +93,7 @@ public static int maxDepth(TreeNode root){
  }
  public  TreeNode arrayToList(T[] array){   //int []arr=[1,2,3,null,4,null, 5]
 
-  TreeNode root=new TreeNode(array[0]);
+  TreeNode root=new TreeNode((Integer) array[0]);
   createTree(root,array);
   return root;
  }

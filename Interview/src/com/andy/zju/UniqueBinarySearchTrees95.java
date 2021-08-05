@@ -8,14 +8,14 @@ import java.util.List;
 public class UniqueBinarySearchTrees95 {
   static  List<TreeNode> list=new ArrayList<>();
    static TreeNode root = null;
-    public static TreeNode calculateNumTrees(int start, int end,TreeNode<Integer> root){
+    public static TreeNode calculateNumTrees(int start, int end,TreeNode root){
 
         if(root==null) root=new TreeNode();
         //当出现这种情况之时，说明当前子树构造方式为0种，但计算总数是左乘右，故可以设置成1方便计算。
         if(start >= end)
                 {
-                    TreeNode<Integer>  leave=new TreeNode();
-                    leave.data=start;
+                    TreeNode  leave=new TreeNode();
+                    leave.val =start;
                     return leave;
                 }
         int count = 0;

@@ -1,4 +1,4 @@
-package com.andy.zju;
+package com.andy.zju.binarytree;
 
 import com.andy.ds.TreeNode;
 
@@ -16,13 +16,12 @@ public class IsUniversalTree965 {
            count+=1;
        return count;
     }
-    public  boolean isUnique(TreeNode
-                                     node){
+    public  boolean isUnique(TreeNode  node){
         if(node==null)
             return true;
-         if(node.left!=null&&node.left.data!=node.data)
+         if(node.left!=null&&node.left.val !=node.val)
             return false;
-        if(node.right!=null&&node.right.data!=node.data)
+        if(node.right!=null&&node.right.val !=node.val)
             return false;
         if(isUnique(node.left)&&isUnique(node.right))
             return true;

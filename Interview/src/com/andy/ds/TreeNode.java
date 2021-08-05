@@ -3,23 +3,23 @@ package com.andy.ds;
 /**
  * Created by aweng on 7/26/2016.
  */
-public class TreeNode<T> {
-    public T data;
-    public TreeNode<T> left;
-    public TreeNode<T> right;
+public class TreeNode {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
     public TreeNode()
     {}
 
-    public TreeNode(T data)
+    public TreeNode(int val)
     {
-        this.data=data;
+        this.val = val;
         this.left=null;
         this.right=null;
 
     }
-    public TreeNode(T data,TreeNode<T> left,TreeNode<T> right)
+    public TreeNode(int val, TreeNode left, TreeNode right)
     {
-        this.data=data;
+        this.val = val;
         this.left=left;
         this.right=right;
     }

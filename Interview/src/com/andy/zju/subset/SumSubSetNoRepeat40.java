@@ -5,27 +5,16 @@ import java.util.*;
 public class SumSubSetNoRepeat40 {
 
     public static void main(String[] ss){
-       // int[] test=new int[]{10,1,2,7,6,1,5};
-        //int target=8;
+        int[] test=new int[]{10,1,2,7,6,1,5};
+        int target=8;
+      //  int[] test=new int[]{4,4,2,1,4,2,2,1,3};
+      //  int target=6;
 
-        int[] test=new int[]{
-                4,4,2,1,4,2,2,1,3
-                //10,1,2,7,6,1,5
-
-        };
-        int target=6; //8
-
-
-        int[] test2=new int[test.length+1];
-       // int target=6;
-       //int [] ast= asterriod_collision(test);
         List<List<Integer>>res=new ArrayList<>();
-        test2[0]=0;
-        for (int i = 1; i <test.length+1 ; i++) {
-            test2[i]=test[i-1];
-        }
-        sumsubset(res,test2,new ArrayList<>(),0,target);
-        HashMap<Integer,List> hashMap=new HashMap<>();
+Arrays.sort(test);
+        sumsubset(res,test,new ArrayList<>(),0,target);
+        System.out.println(res);
+   /*     HashMap<Integer,List> hashMap=new HashMap<>();
       for (List li:res) {
          li.sort(new Comparator() {
              @Override
@@ -48,10 +37,10 @@ public class SumSubSetNoRepeat40 {
         hashMap.values().stream().forEach(a->{res2.add(a);
         });
         System.out.println(res2);
-
+*/
 
     }
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+/*    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>>res=new ArrayList<>();
         int[] candidates2=new int[candidates.length+1];
 
@@ -75,7 +64,7 @@ public class SumSubSetNoRepeat40 {
         hashMap.values().stream().forEach(a->{res2.add(a);
         });
         return res2;
-    }
+    }*/
     public  static void sumsubset(List<List<Integer>>res,int[] ast,List<Integer> cur, int index,int target) {
         if(ast.length-1==0)
             return;
@@ -120,16 +109,18 @@ public class SumSubSetNoRepeat40 {
             res.add(new ArrayList<Integer>(cur));
             return;
         }
-        //else if(target>0) {
-        //HashMap<Integer,Integer> hashMap=new HashMap<>();
-        for (int i = index+1; i <ast.length ; i++) {
+
+        for (int i = index; i <ast.length&& ast[i] <= target ; i++) {
+            // ast[i] == ast[i - 1]去除同一层的重复
+            //i > index 去除上一层的重复
+            if(i > index &&ast[i] == ast[i - 1]) continue;
             cur.add(ast[i]);
-            sumsubset(res, ast, cur, i, target - ast[i]);
+            sumsubset(res, ast, cur, i+1, target - ast[i]);
             cur.remove(cur.size() - 1);
 
         }
 
-        //}
+
 
 
     }

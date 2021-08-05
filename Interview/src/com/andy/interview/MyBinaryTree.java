@@ -11,7 +11,7 @@ public class MyBinaryTree<T> {
     public void printTreePre(TreeNode root)
     {
         if(root!=null) {
-            System.out.println(root.data);
+            System.out.println(root.val);
             printTreePre(root.left);
             printTreePre(root.right);
         }
@@ -20,7 +20,7 @@ public class MyBinaryTree<T> {
     {
         if(root!=null) {
             printTreeIn(root.left);
-            System.out.println(root.data);
+            System.out.println(root.val);
             printTreeIn(root.right);
         }
     }
@@ -29,7 +29,7 @@ public class MyBinaryTree<T> {
         if(root!=null) {
             printTreePro(root.left);
             printTreePro(root.right);
-            System.out.println(root.data);
+            System.out.println(root.val);
         }
     }
     public void printTreeLevel(TreeNode root)
@@ -37,9 +37,9 @@ public class MyBinaryTree<T> {
         queue.offer(root);
         while(!queue.isEmpty()){
 
-            TreeNode<T> node=(TreeNode<T>)queue.poll();
+            TreeNode node=(TreeNode)queue.poll();
 
-            System.out.println(node.data);
+            System.out.println(node.val);
             if(node.left!=null){
                 queue.offer(node.left);
             }
@@ -64,13 +64,13 @@ public class MyBinaryTree<T> {
 
         while(!queue.isEmpty()&&i<array.length){
             if(i<array.length&&array[i]!=null)
-                tmp1=new TreeNode(array[i]);else
+                tmp1=new TreeNode((Integer) array[i]);else
                 tmp1=null;
             if((i+1)<array.length&&array[i+1]!=null)
-                tmp2=new TreeNode(array[i+1]);else
+                tmp2=new TreeNode((Integer) array[i+1]);else
                 tmp2=null;
             i+=2;
-            TreeNode<T> node=(TreeNode<T>)queue.poll();
+            TreeNode node=(TreeNode)queue.poll();
             node.left=tmp1;
             node.right=tmp2;
 
@@ -85,16 +85,16 @@ public class MyBinaryTree<T> {
     }
     public  TreeNode arrayToList(T[] array){   //int []arr=[1,2,3,null,4,null, 5]
 
-        TreeNode root=new TreeNode(array[0]);
+        TreeNode root=new TreeNode((Integer) array[0]);
         createTree(root,array);
         return root;
     }
     //对称翻转一棵二叉树
-    public void reverseTree(TreeNode<T> root)
+    public void reverseTree(TreeNode root)
     {
         if(root!=null) {
             reverseTree(root.left);
-            TreeNode<T> tmp = root.left;
+            TreeNode tmp = root.left;
             root.left = root.right;
             root.right = tmp;
             reverseTree(root.left);
@@ -103,7 +103,7 @@ public class MyBinaryTree<T> {
     }
 
     //求一棵树高度
-    public int maxDepth(TreeNode<T> root)
+    public int maxDepth(TreeNode root)
     {
         if(root==null)
             return 0;
