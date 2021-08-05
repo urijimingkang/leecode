@@ -1,10 +1,10 @@
-package com.andy.zju.Combinationsum;
+package com.andy.zju.CombinationSums;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> path = new ArrayList<>();
