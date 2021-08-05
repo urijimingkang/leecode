@@ -19,43 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ab5d29c-9c92-40f9-be0b-364a489f68fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/BinaryTreeInorderTraversal94.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ContainerWithMostWater11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/GenerateParentheses22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/IsUniversalTree965.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/LetterCombinationsOfPhoneNumber17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/MaximumSubarray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/MergeTwoSortedLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/NextPermutation31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/Permutations46.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/RemoveDuplicatesInOrderedArray26.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/RemoveNthNOdeFromEndofList19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ReoverTreeNode99.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ReverseNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/RomeToInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/SubSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/SumSubSet39.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/SumSubSetNoRepeat40.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ThreeSumTry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/TrappingRainWater42.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/UniqueBinarySearchTrees95.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/UniqueBinarySearchTrees96.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/ValidParentheses20.java" afterDir="false" />
+    <list default="true" id="7ab5d29c-9c92-40f9-be0b-364a489f68fb" name="Default" comment="ready for autonomic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/interview/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/interview/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/AsterriodCollision_leecode735.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/AsterriodCollision735.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/Daily_temp_leecode739.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/DailyTemp739.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/MaxSubIntergerListSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/MaxSubIntergerListSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/SubSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/SubSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/SumOfTwoNumberInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/SumOfTwoNumberInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/leecode/reverse_linkedlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/leecode/ReverseLinkedlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/zju/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview/src/com/andy/zju/CircleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interview/src/com/andy/zju/CircleNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +63,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -237,6 +207,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -251,6 +222,7 @@
       <workItem from="1534640059056" duration="24000" />
       <workItem from="1534640168602" duration="187000" />
       <workItem from="1540433142878" duration="6262000" />
+      <workItem from="1628102390903" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="ready for autonomic">
       <created>1534640350816</created>
@@ -266,7 +238,7 @@
     <option name="totallyTimeSpent" value="6522000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -294,6 +266,11 @@
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>
