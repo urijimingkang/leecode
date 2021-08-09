@@ -14,57 +14,10 @@ public class SumSubSetNoRepeat40 {
 Arrays.sort(test);
         sumsubset(res,test,new ArrayList<>(),0,target);
         System.out.println(res);
-   /*     HashMap<Integer,List> hashMap=new HashMap<>();
-      for (List li:res) {
-         li.sort(new Comparator() {
-             @Override
-             public int compare(Object o1, Object o2) {
-                 return (Integer)o1-(Integer)o2;
-             }
-         });
-          HashSet set=new HashSet();
 
-            for (int i = 0; i <li.size() ; i++) {
-
-                    set.addAll(li);
-            }
-            hashMap.put(set.hashCode(),li);
-
-
-        }
-        List<List<Integer>>res2=new  ArrayList<>();
-        System.out.println(hashMap);
-        hashMap.values().stream().forEach(a->{res2.add(a);
-        });
-        System.out.println(res2);
-*/
 
     }
-/*    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>>res=new ArrayList<>();
-        int[] candidates2=new int[candidates.length+1];
 
-        candidates2[0]=0;
-        for (int i = 1; i <candidates.length+1 ; i++) {
-            candidates2[i]=candidates[i-1];
-        }
-        sumsubset(res,candidates2,new ArrayList<>(),0,target);
-        HashMap<Integer,List> hashMap=new HashMap<>();
-        for (List li:res) {
-            int sum=1;
-            for (int i = 0; i <li.size() ; i++) {
-                sum=sum*10+Integer.parseInt(String.valueOf(li.get(i)));
-            }
-            hashMap.put(sum,li);
-
-
-        }
-        List<List<Integer>>res2=new  ArrayList<>();
-
-        hashMap.values().stream().forEach(a->{res2.add(a);
-        });
-        return res2;
-    }*/
     public  static void sumsubset(List<List<Integer>>res,int[] ast,List<Integer> cur, int index,int target) {
         if(ast.length-1==0)
             return;
