@@ -6,10 +6,12 @@ class NetworkDelayTime743 {
     public static void main(String[] args) {
 
 
-        int[][] times=new int[][]{{2,1,1},{2,3,1},{3,4,1},{1,4,2}};//{1,5,2},{4,5,6}
+        int[][] times=new int[][]{{2,1,6},{2,3,6},{3,4,1},{1,4,2}};//{1,5,2},{4,5,6}
         int n = 4, k = 2;
-     int ret=  networkDelayTime(times,n,k);
-     //   int ret=  networkDelayTime_Dijkstra(times,n,k);
+     //int ret=  Dijkstra_origin(times,n,k);
+      //  int ret=  Dijkstra_origin(times,n,k);
+       int ret=  MyDijkstra(times,n,k);
+      // int ret=  networkDelayTime(times,n,k);
         System.out.println(ret);}
 
     public static int networkDelayTime(int[][] times, int n, int k) {
@@ -92,8 +94,8 @@ class NetworkDelayTime743 {
         return ret;
     }
 
-    Map<Integer, Integer> dist;
-    public int Dijkstra_origin(int[][] times, int N, int K) {
+    static Map<Integer, Integer> dist;
+    public static int Dijkstra_origin(int[][] times, int N, int K) {
         Map<Integer, List<int[]>> graph = new HashMap();
         for (int[] edge: times) {
             if (!graph.containsKey(edge[0]))
@@ -131,5 +133,51 @@ class NetworkDelayTime743 {
             ans = Math.max(ans, cand);
         }
         return ans;
+    }
+    public static int MyDijkstra(int[][] times, int N, int K){
+        HashMap<Integer, List<int[]>> graph=new HashMap();
+        for (int [] time:times
+             ) {
+            graph.computeIfAbsent(time[0], kk -> new ArrayList<>()).add(new int[]{time[1], time[2]});
+
+        }
+        /*for (int[] edge: times) {
+            if (!graph.containsKey(edge[0]))
+                graph.put(edge[0], new ArrayList<int[]>());
+            graph.get(edge[0]).add(new int[]{edge[1], edge[2]});
+        }*/
+        HashMap<Integer, Integer> dist=new HashMap();
+
+        boolean[] seen = new boolean[N+1];
+        for (int i = 1; i <=N ; ++i) {
+            dist.put(i, Integer.MAX_VALUE);
+        }
+        dist.put(K,0);
+
+        while(true){
+            int cadNode=-1;
+            int candDist = Integer.MAX_VALUE;
+            for (int i = 1; i <=N; ++i) {
+                if(!seen[i] &&dist.get(i)<candDist){
+                    candDist=dist.get(i);
+                    cadNode=i;
+                }
+            }
+            if(cadNode==-1) break;
+            seen[cadNode]=true;
+            if (graph.containsKey(cadNode))
+            for (int[] edge:
+                 graph.get(cadNode)) {
+                dist.put(edge[0],Math.min(dist.get(edge[0]),dist.get(cadNode)+edge[1]));
+            }
+
+        }
+        int ans = 0;
+        for (int cand: dist.values()) {
+            if (cand == Integer.MAX_VALUE) return -1;
+            ans = Math.max(ans, cand);
+        }
+        return ans;
+
     }
 }

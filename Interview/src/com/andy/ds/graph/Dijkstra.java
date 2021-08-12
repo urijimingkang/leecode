@@ -69,6 +69,12 @@ public class Dijkstra {
 
     public static void main(String[] args) {
         final int INT_MAX = Integer.MAX_VALUE;
+        /*
+        1------------>5
+        |
+        |
+        5
+         */
         int graph[][] =
                 {{INT_MAX, INT_MAX, INT_MAX, INT_MAX, 2, 5},
                         {INT_MAX, INT_MAX, 5, INT_MAX, 4, INT_MAX},
@@ -77,6 +83,8 @@ public class Dijkstra {
                         {INT_MAX, INT_MAX, 6, 2, INT_MAX, INT_MAX},
                         {INT_MAX, 4, 3, INT_MAX, INT_MAX, INT_MAX}};
         Dijkstra gr = new Dijkstra(graph, 6, 1);
+
+
         gr.Dijstra();
         gr.print();
     }
