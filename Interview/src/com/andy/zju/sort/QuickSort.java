@@ -50,13 +50,14 @@ public class QuickSort {
     public static void QuickSort(int []arr, int begin,int end){
         if( (begin < end))
         {
-            int tmp = partition(arr, begin, end);
+           // int tmp = partitionRight(arr, begin, end);
+            int tmp = partitionLeft(arr, begin, end);
             QuickSort(arr, begin, tmp - 1);
             QuickSort(arr, tmp + 1, end);
         }
 
     }
-   public static int  partition(int[]arr,int low,int high)
+   public static int  partitionRight(int[]arr,int low,int high)
     {
         // pivot (Element to be placed at right position)
         int pivot = arr[high];
@@ -73,6 +74,36 @@ int i= (low - 1) ; // Index of smaller element
         }
         swap (arr,i + 1 ,high); //最后一次交换，这事pivot的左边都比pivot小
         return (i + 1);
+    }
+    public static int  partitionLeft(int[]arr,int low,int high)
+    {
+        // pivot (Element to be placed at right position)
+        int pivot = arr[low];
+        int i= low+1 ; // Index of smaller element
+
+        //注意这里j<=high 而不是就j<=high-1
+        for (int j = low+1; j <= high; j++)    //注意这里实际是移动pivot，比如10, 80,70， 30，然后把pivot左右两边j与i的对应数交换 ；还可以有其他寻找方式
+        {
+            // If current element is smaller than the pivot
+            if (arr[j] < pivot)
+            {                                                                 //  p |  <p|  >p|unpartitioned
+                                                                              //       i   j
+
+                swap(arr,i, j);  //这里是交换所有比pivot小的逆序对，比如（5，3）
+                i++;    // increment index of smaller element
+            }
+        }
+        swap (arr,low ,i -1 ); //最后一次交换，这事pivot的左边都比pivot小
+        return (i - 1);
+    }
+
+    public static int  partitionMedian(int[]arr,int low,int high)
+    {
+        int m=(low+high)/2;
+        if(m!=low)
+            swap(arr,m,low);
+       return partitionLeft(arr,low,high);
+
     }
     public static void swap(int []arr,int a,int b){
         int tmp=arr[a];
