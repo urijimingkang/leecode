@@ -43,7 +43,7 @@ it.
 
 public class QuickSort {
     public static void main(String[]ss){
-        int []arr =new int[]{1,5,3,9,8,4};
+        int []arr =new int[]{1,5,3,9,8,4,10};
         QuickSort(arr,0,arr.length-1);
         Arrays.stream(arr).forEach(System.out::println);
     }
@@ -51,7 +51,8 @@ public class QuickSort {
         if( (begin < end))
         {
            // int tmp = partitionRight(arr, begin, end);
-            int tmp = partitionLeft(arr, begin, end);
+          //  int tmp = partitionLeft(arr, begin, end);
+            int tmp = partitionMedian(arr, begin, end);
             QuickSort(arr, begin, tmp - 1);
             QuickSort(arr, tmp + 1, end);
         }
