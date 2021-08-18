@@ -40,7 +40,7 @@ public class SubSet {
         res.add(new ArrayList<Integer>(cur));
         for (int i = index; i <ast.length ; i++) {
             //if(i > index ) continue;
-            cur.add(ast[index]);
+            cur.add(ast[i]);
             subset2(res,ast,cur,i+1);
             cur.remove(cur.size()-1);
           //  subset(res,ast,cur,index+1);

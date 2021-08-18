@@ -137,7 +137,7 @@ cur.remove(cur.size()-1);
 
         }*/
 }
-class Person implements  Comparable{
+class Person {
     public int getId() {
         return id;
     }
@@ -183,8 +183,8 @@ class Person implements  Comparable{
                 '}';
     }
 
-    @Override
+   /* @Override
     public int compareTo(Object o) {
         return ((Person)o).salary-this.salary;
-    }
+    }*/
 }
