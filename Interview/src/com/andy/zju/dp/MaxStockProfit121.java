@@ -7,7 +7,7 @@ import java.util.concurrent.DelayQueue;
 
 public class MaxStockProfit121 {
     public static void main(String []ss){
-int[] prices={7,1,5,3,6,4};
+int[] prices={7,1,5,3,6,4};                           // 7  1 5 3 4 6 4
         System.out.println(maxProfit(prices,2));
         //Stack stack=new LinkedList();
 

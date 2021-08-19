@@ -19,15 +19,15 @@ quicksort(arr,0,arr.length-1);
 cur.remove(cur.size()-1);
         }
     }*/
-    // 1 2 3 4  5
-    //  1 2 3  5 4  nlogn
+
+    //  1  3 2  5 4
 
         public static void  quicksort(int[]arr,int low,int high){
             if(low<0|| high>=arr.length||high-low<1)
                 return;
             int i=low;
-            int stand=arr[low];
-            //int pilot=arr[high];
+            //int stand=arr[low];
+            int stand=arr[high];
             int j=high;
             while(i!=j){
 

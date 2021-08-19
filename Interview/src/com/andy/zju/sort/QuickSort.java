@@ -51,8 +51,8 @@ public class QuickSort {
         if( (begin < end))
         {
            // int tmp = partitionRight(arr, begin, end);
-          //  int tmp = partitionLeft(arr, begin, end);
-            int tmp = partitionMedian(arr, begin, end);
+            int tmp = partitionLeft(arr, begin, end);
+          //  int tmp = partitionMedian(arr, begin, end);
             QuickSort(arr, begin, tmp - 1);
             QuickSort(arr, tmp + 1, end);
         }
@@ -87,8 +87,8 @@ int i= (low - 1) ; // Index of smaller element
         {
             // If current element is smaller than the pivot
             if (arr[j] < pivot)
-            {                                                                 //  p |  <p|  >p|unpartitioned
-                                                                              //       i   j
+            {                                                                 //  p | ... <p|  >p|unpartitioned
+                                                                              //           i   j
 
                 swap(arr,i, j);  //这里是交换所有比pivot小的逆序对，比如（5，3）
                 i++;    // increment index of smaller element
