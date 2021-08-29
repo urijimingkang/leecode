@@ -39,6 +39,7 @@ public class MaximalRectangle {
             }
             stack.push(i);
             right[i] = n;
+            
         }
 
         int[] left = new int[n];
