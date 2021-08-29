@@ -36,7 +36,7 @@ public class MaximalRectangle {
             while(stack.size() > 0 && heights[stack.peek()] > heights[i]) {
                 right[stack.peek()] = i;
                 stack.pop();
-            }   
+            }
             stack.push(i);
             right[i] = n;
         }
