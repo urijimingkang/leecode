@@ -25,6 +25,7 @@ int[] prices={7,1,5,3,6,4};                           // 7  1 5 3 4 6 4
                //globalmax一个是当前到达第i天可以最多进行j次交易，最好的利润是多少
                 globalmax[i][j] = Math.max(localmax[i][j],globalmax[i-1][j]);
 
+                
 
             }
             System.out.println("i="+i+" "+localmax[i][1]+" "+localmax[i][2]);
