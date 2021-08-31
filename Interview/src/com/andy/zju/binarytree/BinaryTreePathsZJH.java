@@ -5,7 +5,10 @@ import com.andy.ds.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class BinaryTreePathsZJH {
+    public static void main(String[] args) {
+        StringBuffer sb=new StringBuffer();
+    }
     List<String> res = new ArrayList<String>();
 
     public List<String> binaryTreePaths(TreeNode root) {
@@ -28,11 +31,15 @@ class Solution {
         if(root.left == null && root.right == null){
             sb.append(root.val);
             res.add(sb.toString());
+
             return;
         }
 
         sb.append(root.val + "->");
-        helper(root.left, new StringBuilder (sb));
-        helper(root.right, new StringBuilder (sb));
+        helper(root.left, sb);
+        helper(root.right, sb);
+        sb.deleteCharAt(sb.length()-3);
+
     }
+
 }

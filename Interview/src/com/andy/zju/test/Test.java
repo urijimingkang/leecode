@@ -3,13 +3,17 @@ package com.andy.zju.test;
 import com.sun.scenario.effect.Brightpass;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-int[] arr=new int[]{ 1 ,2 ,5 ,4 ,3,6,9,8};
-quicksort(arr,0,arr.length-1);
-        System.out.println(arr);
+int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3,6,9,8};
+//quicksort(arr,0,arr.length-1);
+// System.out.println(res);
+
+
     }
     /*public static void subset2(List<List<Integer>>res, int[] ast, List<Integer> cur, int index) {
         res.add(new ArrayList<>(cur));
@@ -21,7 +25,7 @@ cur.remove(cur.size()-1);
     }*/
 
     //  1  3 2  5 4
-
+/*
         public static void  quicksort(int[]arr,int low,int high){
             if(low<0|| high>=arr.length||high-low<1)
                 return;
@@ -48,4 +52,7 @@ cur.remove(cur.size()-1);
             quicksort(arr,i+1,high);
 
         }
+
+ */
+
 }
