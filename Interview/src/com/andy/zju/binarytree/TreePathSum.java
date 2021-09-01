@@ -23,7 +23,7 @@ public class TreePathSum {
         node.right=right;
         right.right=right2;
         right.left=left2;
-        System.out.println(treePathSum(node,2));
+        System.out.println(treePathSum(node,4));
     }
     public static boolean treePathSum(TreeNode root,int target) {
         if(root!=null&&root.val==target&&(root.left==null&&root.right==null)) {

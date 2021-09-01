@@ -19,7 +19,7 @@ Arrays.sort(test);
     }
 
     public  static void sumsubset(List<List<Integer>>res,int[] ast,List<Integer> cur, int index,int target) {
-        if(ast.length-1==0)
+      /*  if(ast.length-1==0)
             return;
         if(ast.length-1==1)
         {
@@ -53,7 +53,7 @@ Arrays.sort(test);
             }
             return;
 
-        }
+        }*/
         if(target<0)
             return;
         if(target==0)

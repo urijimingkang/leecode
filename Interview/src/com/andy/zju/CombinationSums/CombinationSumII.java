@@ -5,7 +5,15 @@ import java.util.Arrays;
 import java.util.List;
 
 class CombinationSumII {
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+    public static void main(String[] args) {
+        int[] arr=new int[]{ 1,1 ,2,2 ,3,4};
+
+        //   List<List<Integer>> res=    findTwoSum(arr,5);
+        //  List<List<Integer>> res=    findThreeSum(arr,5);
+        List<List<Integer>> res=  combinationSum2(arr,5);
+        System.out.println(res);
+    }
+    public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> path = new ArrayList<>();
         Arrays.sort(candidates);
@@ -13,7 +21,7 @@ class CombinationSumII {
         return result;
     }
     
-    public void dfs(int[] candidates, int target, List<List<Integer>> result, List<Integer> path, int index){
+    public static void dfs(int[] candidates, int target, List<List<Integer>> result, List<Integer> path, int index){
         if(target < 0) return; 
         
         if(target == 0){

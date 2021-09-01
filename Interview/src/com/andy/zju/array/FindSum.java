@@ -7,10 +7,10 @@ import java.util.List;
 
 public class FindSum {
     public static void main(String[] args) {
-int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3};
+int[] arr=new int[]{ 1,1 ,4 ,3,2,2 ,5 };
 
-     //   List<List<Integer>> res=    findTwoSum(arr,5);
-      //  List<List<Integer>> res=    findThreeSum(arr,5);
+      //  List<List<Integer>> res=    findTwoSum(arr,5);
+      // List<List<Integer>> res=    findThreeSum(arr,5);
       List<List<Integer>> res=  findNSum(arr,5,3);
         System.out.println(res);
     }
@@ -20,6 +20,8 @@ int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3};
         Arrays.sort(arr);
         List<List<Integer>> res=new ArrayList<>();
         HashMap<Integer,Integer> map=new HashMap<>();
+
+
         for (int i = 0; i <arr.length ; i++) {
             int tmp=target-arr[i];
 
@@ -44,7 +46,7 @@ int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3};
         Arrays.sort(arr);
         List<List<Integer>> res=new ArrayList<>();
         HashMap<Integer,Integer> map=new HashMap<>();
-        for (int i = 0; i <arr.length ; i++) {
+        for (int i = 0; i <arr.length ; i++) { //1 2 3 4
             if(i>0&&arr[i]==arr[i-1]) continue;
             List<List<Integer>> tmp= findTwoSum(arr,i+1,target-arr[i]);
             for (List<Integer> lst:
@@ -84,24 +86,25 @@ int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3};
         Arrays.sort(arr);
         HashMap<Integer,Integer> map=new HashMap<>();
          List<List<Integer>> res=new ArrayList<>();
-        findNSum(arr,0,new ArrayList<Integer>(),res,target,NUM);
+        dfs(arr,0,new ArrayList<Integer>(),res,target,NUM);
         return res;
     }
-    public static  void findNSum(int[]arr ,int index,List<Integer> cur, List<List<Integer>> res,int target,int NUM) {
-        if(cur.size()==NUM)
-        {
-            int tmp=0;
-            for (int i = 0; i < NUM; i++) {
-                tmp+=cur.get(i);
-            }
-            if(tmp==target)
-            res.add(new ArrayList<>(cur));
-            return ;
-        }
+    public static  void dfs(int[]arr ,int index,List<Integer> cur, List<List<Integer>> res,int target,int NUM) {
+
         for (int i = index; i <arr.length ; i++) {
+            if(cur.size()==NUM)
+            {
+                int tmp=0;
+                for (int j = 0; j < NUM;j++) {
+                    tmp+=cur.get(j);
+                }
+                if(tmp==target)
+                    res.add(new ArrayList<>(cur));
+                return ;
+            }
             if(i>index&&arr[i]==arr[i-1]) continue;
             cur.add(arr[i]);
-            findNSum(arr,i+1,cur,res,target,NUM);
+            dfs(arr,i+1,cur,res,target,NUM);
             cur.remove(cur.size()-1);
         }
 

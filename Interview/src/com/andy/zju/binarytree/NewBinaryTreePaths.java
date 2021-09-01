@@ -5,8 +5,8 @@ import com.andy.ds.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-class BinaryTreePaths {
-   static List<String> res = new ArrayList<String>();
+public class NewBinaryTreePaths {
+    static List<String> res = new ArrayList<String>();
 
     public static void main(String[] args) {
         TreeNode node=new TreeNode();
@@ -19,11 +19,11 @@ class BinaryTreePaths {
         right.val =3;
         left.val =2;
         right2.val =5;
-      //  left2.val =6;
+        //  left2.val =6;
         node.left=left;
         node.right=right;
         left.right=right2;
-       // right.left=left2;
+        // right.left=left2;
         System.out.println(binaryTreePaths(node));
     }
     public static List<String> binaryTreePaths(TreeNode root) {
@@ -50,7 +50,7 @@ class BinaryTreePaths {
         }
 
         sb.append(root.val + "->");
-        helper(root.left, new StringBuilder (sb));
-        helper(root.right, new StringBuilder (sb));
+        helper(root.left, new  StringBuilder(sb));
+        helper(root.right, new  StringBuilder(sb));
     }
 }
