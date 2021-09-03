@@ -1,6 +1,6 @@
 //參考：https://leetcode.wang/leetCode-3-Longest-Substring-Without-Repeating-Characters.html
 
-package com.andy.zju;
+package com.andy.zju.array;
 import java.util.HashMap;
 
 public class MaxLongestSubstringWithoutRepeat {

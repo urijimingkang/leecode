@@ -1,10 +1,10 @@
-package com.andy.zju.test;
+package com.andy.zju.array;
 
-import com.sun.scenario.effect.Brightpass;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Set;
 
-import java.util.*;
-
-public class Test {
+public class MinOperationTimes {
     public static void main(String[] args) {
 //int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3,6,9,8};
 //quicksort(arr,0,arr.length-1);
