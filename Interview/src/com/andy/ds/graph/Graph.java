@@ -13,4 +13,5 @@ public void printAdjacencyMatrix(); //打印邻接距阵
  public void printEdges(); //打印所有的邻接表
 public AbstractGraph<V>.Tree dfs(int v); //以结点v为根，深度优先搜索生成树
  public AbstractGraph<V>.Tree bfs(int v); //以结点v为根，宽度优先搜索生成树
+ public AbstractGraph<V>.Tree bfs(int src,int dest); //以结点v为根，宽度优先搜索生成树
  }

@@ -180,6 +180,30 @@ public abstract class AbstractGraph<V> implements Graph<V> {
         return new Tree(v, parent, searchOrders);
     }
 
+    public Tree bfs(int v,int dest) {
+        List<Integer> searchOrders = new ArrayList<Integer>();
+        int[] parent = new int[vertices.size()];
+        for (int i = 0; i < parent.length; i++) {
+            parent[i] = -1;
+        }
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+        boolean[] isVisited = new boolean[vertices.size()];
+        queue.offer(v);
+        isVisited[v] = true;
+        while (!queue.isEmpty()) {
+            int u = queue.poll();//dequeue to u
+            searchOrders.add(u);
+            for (int w : neighbors.get(u)) {
+                if (!isVisited[w]) {
+                    queue.offer(w);
+                    parent[w] = u;
+                    isVisited[w] = true;
+                }
+            }
+        }
+        return new Tree(v, parent, searchOrders);
+    }
+
     public class Tree {
         private int root;
         private int[] parent;
