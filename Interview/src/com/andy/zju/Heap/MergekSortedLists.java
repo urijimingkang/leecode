@@ -5,6 +5,10 @@ import com.andy.leecode.ListNode;
 import java.util.PriorityQueue;
 
 public class MergekSortedLists {
+
+    public static void main(String[] args) {
+
+    }
     public class ListNode {
       int val;
      ListNode next;
