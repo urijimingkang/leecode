@@ -5,7 +5,7 @@ import com.sun.scenario.effect.Brightpass;
 import java.util.*;
 
 public class Test {
-    public static void main(String[] args) {
+   // public static void main(String[] args) {
 //int[] arr=new int[]{ 1,1 ,2,2 ,5 ,4 ,3,6,9,8};
 //quicksort(arr,0,arr.length-1);
 // System.out.println(res);
@@ -13,10 +13,50 @@ public class Test {
        // LinkedHashMap<Integer,Integer> map= minOperation(arr);
       //  int[] arr=new int[]{2,1,3,1,4,1};
 
-        System.out.println(minOperation(arr));
+      //  System.out.println(minOperation(arr));
+    //}
+
+    public static void main(String[] args) {
+        int [] w=new int[]{5,5};
+        for (int i = 0; i <10 ; i++) {
+            int ind=Solution(w);
+            System.out.println(Solution(w));
+        }
+
     }
 
-    public static int  minOperation(int[] arr){
+    static HashMap<Integer, Integer>  map=new HashMap();
+   static int sum=0;
+    public static int Solution(int[] w) {
+       // int sum=0;
+        for(int i=0;i<w.length;i++)
+            sum+=w[i];
+        for(int i=0;i<w.length;i++)
+            map.put(w[i],i);
+
+
+        return pickIndex(w);
+
+
+    }
+
+    public static int pickIndex(int[] w) {
+        Random rand = new Random();
+        int tmp=rand.nextInt(sum);
+        int min=100000;
+        int ret=100;
+       /* for (Integer a:
+             map.keySet()) {
+            if(Math.abs(tmp-a)<min)
+            {min=Math.abs(tmp-a);
+            ret=a;
+            };
+        }*/
+        return tmp*w.length/sum;
+    }
+
+
+/*    public static int  minOperation(int[] arr){
         Arrays.sort(arr);
         LinkedHashMap<Integer,Integer> map=new LinkedHashMap<>();
         for (int i = 0; i <arr.length ; i++) {
@@ -40,7 +80,7 @@ int cnt=0;
         }
       //  System.out.println(cnt);
         return cnt;
-    }
+    }*/
     /*public static void subset2(List<List<Integer>>res, int[] ast, List<Integer> cur, int index) {
         res.add(new ArrayList<>(cur));
         for (int i = index; i <ast.length ; i++) {
