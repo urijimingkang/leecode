@@ -11,8 +11,137 @@ public class FindCheapestPrice787 {
     static int INF = 1000007;
 
     public static int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        return bfs(n, flights, src, dst, k);
+       // return bfs(n, flights, src, dst, k);
+      /*  List<int[]>[] g = new List[n];
+        boolean[] visited=new boolean[n];
+        for (int i = 0; i < n; i++) {
+            g[i] = new ArrayList<>();
+            visited[i]=false;
+        }
+
+        for (int[] flight : flights) {
+            g[flight[0]].add(new int[] {flight[1], flight[2]});
+        }
+        int[] ans = new int[n];
+        Arrays.fill(ans, INF);
+
+          dfs(n,flights,g,src,dst,k,ans,visited);
+        return ans[dst] >= INF ? -1 : ans[dst];*/
+
+        costs = generateMap(flights);
+        dfs(src, 3, 0,0, new HashSet<Integer>());
+        return minSum == Integer.MAX_VALUE ? -1 : minSum;
     }
+
+
+   // 作者：tong-zhu
+    //链接：https://leetcode-cn.com/problems/cheapest-flights-within-k-stops/solution/tong-ge-lai-shua-ti-la-yi-ti-si-jie-bfs-deqpt/
+
+    private int tong_zhu_dfs(int[][] flights, int i, int dst, int k, int[][] memo) {
+        if (k < 0) {
+            return INF;
+        }
+
+        if (i == dst) {
+            return 0;
+        }
+
+        if (memo[i][k] != 0) {
+            return memo[i][k];
+        }
+
+        int min = INF;
+        for (int[] flight : flights) {
+            // 遍历 i 的下一个节点
+            if (flight[0] == i) {
+                min = Math.min(min, tong_zhu_dfs(flights, flight[1], dst, k - 1, memo) + flight[2]);
+            }
+        }
+
+        memo[i][k] = min;
+
+        return min;
+    }
+    static int minSum = Integer.MAX_VALUE;
+    static int K=1;
+   // static int dst;
+    static Map<Integer, Map<Integer, Integer>> costs;
+    private static void dfs(int src, int dst, int k, int sum, Set<Integer> visited) {
+        if (src == dst) {
+            minSum = Math.min(minSum, sum);
+        }
+
+        // P1: 做一个减枝DFS才能不TLE，当你现在已经sum >= minSum的时候，就没必要继续dfs下去了，没希望了。
+        if (!costs.containsKey(src) || visited.contains(src) || k == K + 1 || sum >= minSum) {
+            return;
+        }
+
+        Map<Integer, Integer> map = costs.get(src);
+        visited.add(src);
+        for (int next : map.keySet()) {
+            dfs(next, dst,k + 1, sum + map.get(next), visited);
+        }
+        visited.remove(src);
+    }
+
+    private static Map<Integer, Map<Integer, Integer>> generateMap(int[][] flights) {
+        Map<Integer, Map<Integer, Integer>> ans = new HashMap<>();
+        for (int i = 0; i < flights.length; i++) {
+            ans.putIfAbsent(flights[i][0], new HashMap<Integer, Integer>());
+            ans.get(flights[i][0]).put(flights[i][1], flights[i][2]);
+        }
+        return ans;
+    }
+
+/*static int final_sum=10000;
+    private static void  dfs(int n, int[][] flights, List<int[]>[] g,int src, int dst, int k,   int sum,Set<Integer> visited ) {
+
+        if(k<0)
+            return;
+        if (src==dst)
+             Math.min(final_sum,sum);
+
+        //if (!g[].containsKey(src) || visited.contains(src) || k == K + 1 || sum >= minSum) {
+       //     return;
+       // }
+        visited.add(src);
+        //  int[] poll = g[src];
+        for (int[] path : g[src]) {
+            int distance =0;
+            distance +=   path[1];
+            // 剪枝1，小于 i 之前记录的最小值，且小于 dst 之前记录的最小值
+          //  if ( !visited[path[0]]&&distance < ans[path[0]] && distance < ans[dst]) {
+           //     ans[path[0]] = distance;
+          //  }
+            dfs(n,flights,g,path[0],dst,k-1,sum+path[1],visited);
+        }
+
+        visited.remove(src);
+        return ;
+        // return 0;
+    }*/
+   /* private static void dfs(int n, int[][] flights, List<int[]>[] g,int src, int dst, int k,   int[] ans,boolean[]visited ) {
+
+            if(k<0)
+                return;
+            if (src==dst)
+                return;
+        visited[src]=true;
+              //  int[] poll = g[src];
+                for (int[] path : g[src]) {
+                    int distance =0;
+                    distance +=   path[1];
+                    // 剪枝1，小于 i 之前记录的最小值，且小于 dst 之前记录的最小值
+                    if ( !visited[path[0]]&&distance < ans[path[0]] && distance < ans[dst]) {
+                        ans[path[0]] = distance;
+                    }
+                    dfs(n,flights,g,path[0],dst,k-1,ans,visited);
+                }
+
+
+        return ;
+       // return 0;
+    }*/
 
     private static int bfs(int n, int[][] flights, int src, int dst, int k) {
         // 整理题目给定的flights，转换成每个节点的子节点有哪些
@@ -52,6 +181,8 @@ public class FindCheapestPrice787 {
 
         return ans[dst] >= INF ? -1 : ans[dst];
     }
+
+
     private int dp(int n, int[][] flights, int src, int dst, int K) {
         // dp[i][k]表示从i点到dst走k步的最少价格
         // dp[i][k]=min(dp[i_next][k-1] + g[i][j])
@@ -78,7 +209,9 @@ public class FindCheapestPrice787 {
        int n = 4;
        int [][] edges1 =new int[][]{{0,1,100},{1,2,100},{0,2,500},{2,3,700}};
         int src = 0, dst = 3, k = 2;
-        findCheapestPrice(n,edges1,src,dst,k);
+
+
+        System.out.println(findCheapestPrice(n,edges1,src,dst,k+1));
 
 
 
@@ -86,7 +219,7 @@ public class FindCheapestPrice787 {
 
 
 
-        String[] vertices = {"Settle", "San Francisco", "los angeles",
+     /*   String[] vertices = {"Settle", "San Francisco", "los angeles",
                 "denver", "kansas City", "chicago", "Boston", "new york",
                 "atlanta", "miami", "dallas", "houston"};
         int[][] edges = {
@@ -101,7 +234,7 @@ public class FindCheapestPrice787 {
         graph1.printEdges();
         AbstractGraph.Tree tr=graph1.bfs(0);
         System.out.println("Adjacency matrix for graph1:");
-        graph1.printAdjacencyMatrix();
+        graph1.printAdjacencyMatrix();*/
 
 
        /* String[] names = {"Peter", "Jane", "Mark", "Cindy", "Wendy"};
