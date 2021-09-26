@@ -8,6 +8,9 @@ import static java.util.stream.Collectors.groupingBy;
 
 public class Test {
     public static void main(String[] args) {
+
+        List<List<Integer>> g=new ArrayList();
+
 int[] arr=new int[]{ 1 ,2 ,5 ,4 ,3,6,9,8};
 //quicksort(arr,0,arr.length-1);
   //      System.out.println(arr);
