@@ -8,7 +8,7 @@ class AllPathsSourceTarget797 {
          System.out.println(allPathsSourceTarget3(edges));
     }
 
-   //错误的方法，需要修改b//  add in branch  merger test  // add in master
+   //错误的方法，需要修改b//  add in branch  merger test  // add to masfsdfter
     public static List<List<Integer>> allPathsSourceTarget3(int[][] graph) {
         List<List<Integer>> paths=new ArrayList<List<Integer>>();
         List<Integer>[] g=new List[graph.length]; //
