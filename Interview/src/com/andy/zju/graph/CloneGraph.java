@@ -52,8 +52,9 @@ public class CloneGraph {
 
      }
     public static Node BFS_findneighbor(Node node, Map<Node,Node> Map) {
-        Node src=new Node(node.val,new ArrayList<>());
-        Map.put(node,src);
+        Node dst=new Node(node.val,new ArrayList<>());
+        Map.put(node,dst);
+
         Queue<Node> q=new LinkedList<>();
         q.offer(node);
        while (!q.isEmpty()){
@@ -68,7 +69,7 @@ public class CloneGraph {
            }
 
        }
-return src;
+return dst;
     }
 }
 class Node {
