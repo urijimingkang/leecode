@@ -4,44 +4,44 @@ import java.util.*;
 
 class AllPathsSourceTarget797 {
     public static void main(String[] args) {
-        int[][] edges=new int[][]{{1},{2},{3},{}};
+        int[][] edges=new int[][]{{1,2},{3},{3},{}};
          System.out.println(allPathsSourceTarget3(edges));
     }
 
    //错误的方法，需要修改b//  add in brasdfaanch  merger test  // add to masfsdfter
     public static List<List<Integer>> allPathsSourceTarget3(int[][] graph) {
         List<List<Integer>> paths=new ArrayList<List<Integer>>();
-        List<Integer>[] g=new List[graph.length]; //
+        ArrayList<ArrayList<Integer>> g=new ArrayList<ArrayList<Integer>>(); //ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>(n);
          //Map<Integer,List<Integer>> g=new HashMap();
         for(int i=0;i<graph.length;i++){
            // List<Integer> item=new ArrayList();
-            g[i]=new ArrayList<>();
+            g.add(new ArrayList<>());
         }
         for(int i=0;i<graph.length;i++){
 
             for(int j=0;j<graph[i].length;j++)
             {
-                g[i].add(graph[i][j]);
+                g.get(i).add(graph[i][j]);
             }
 
         }
-        Queue<List<Integer>> q=new LinkedList();
+        Queue<Integer> q=new LinkedList();
         Stack stack=new Stack();
         Set visited=new HashSet();
         visited.add(0);
         ArrayList path=new ArrayList();
         path.add(0);
-        q.offer(g[0]);
+        q.offer(0);
         int dstNode= graph.length - 1;
 
         while(!q.isEmpty()) {
-            List<Integer> pol = q.poll();
+            int pol = q.poll();
             //   List<Integer> neighs=g.get();
             // else {
             // if (pol.get(pol.size()-1)==dstNode) {
             //     paths.add((new ArrayList<>(pol)));
             // }else
-            for (Integer nod : pol) {
+            for (Integer nod : g.get(pol)) {
 
                 if (!visited.contains(nod)) {
                 path.add(nod);
@@ -49,7 +49,7 @@ class AllPathsSourceTarget797 {
 
                    visited.add(nod);
                     path.remove(path.size()-1);
-                   q.add(g[nod]);
+                   q.add(nod);
                 if (nod==dstNode) {
                     paths.add((new ArrayList<>(path)));
                  }else{
