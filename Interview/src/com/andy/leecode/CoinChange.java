@@ -2,7 +2,7 @@ package com.andy.leecode;
 
 public class CoinChange {
     public static void main(String[] ss){
-        int amount =5;
+        int amount =4;
         int[] coins=new int[]{1,2,3};
         System.out.println(change(5,coins));
     }
