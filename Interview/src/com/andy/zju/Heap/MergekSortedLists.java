@@ -1,7 +1,5 @@
 package com.andy.zju.Heap;
 
-import com.andy.leecode.ListNode;
-
 import java.util.PriorityQueue;
 
 public class MergekSortedLists {

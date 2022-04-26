@@ -1,10 +1,5 @@
 package com.andy.zju;
 
-import com.andy.ds.Stack;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class ContainerWithMostWater11 {
     public static void main(String[] args) {
         int []a={1,8,6,2,5,4,8,3,7};

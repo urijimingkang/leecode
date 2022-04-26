@@ -1,10 +1,5 @@
 package com.andy.zju.dp;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Stack;
-import java.util.concurrent.DelayQueue;
-
 public class MaxStockProfit121 {
     public static void main(String []ss){
 int[] prices={7,1,5,3,6,4};                           // 7  1 5 3 4 6 4

@@ -1,7 +1,5 @@
 package com.andy.zju.array;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 import java.util.*;
 
 public class RemoveDuplicatesFromSortedArray {

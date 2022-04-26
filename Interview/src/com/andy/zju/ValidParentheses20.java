@@ -1,7 +1,6 @@
 package com.andy.zju;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class ValidParentheses20 {
     public static void main(String[] args) {

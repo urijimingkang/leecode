@@ -1,7 +1,5 @@
 package com.andy.zju.test;
 
-import com.sun.scenario.effect.Brightpass;
-
 import java.util.*;
 
 public class Test {

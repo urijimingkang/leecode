@@ -1,7 +1,5 @@
 package com.andy.zju;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 public class ReverseNumber {
     public static void main(String[] args) {
         int a=1534236469;
