@@ -33,7 +33,7 @@ Collectors.collectingAndThen(Collectors.reducing(( c1,  c2) -> (c1.getAge() > c2
 
          //test4:
         entrysetStream(list);
-        
+
 
     }
 
