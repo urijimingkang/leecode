@@ -2,7 +2,7 @@ package com.andy.zju.CombinationSums;
 
 import java.util.*;
 
-public class LetterCombinationsOfPhoneNumber17 {
+public class LetterCombinationsofPhoneNumber17 {
     static HashMap<Character,String> hashMap=new HashMap<>();
     public static void main(String[] args) {
         //char[] test=new char[]{'1','2','3'};
