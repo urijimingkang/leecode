@@ -1,4 +1,4 @@
-package com.andy.interview.stream;
+package com.andy.interview;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import static java.util.stream.Collectors.groupingBy;
 
 
-public class Test {
+public class StreamTest {
     public static void main(String[] args) {
 
         List<List<Integer>> g=new ArrayList();
@@ -23,9 +23,9 @@ int[] arr=new int[]{ 1 ,2 ,5 ,4 ,3,6,9,8};
      //   System.out.println(aa);
 
         String ss="helloworld";
-        List<Person> people=new ArrayList<>();
+        List<iPerson> people=new ArrayList<>();
         for (int i = 0; i <20 ; i++) {
-            Person p1=new Person(i,(int)(Math.random()*10),ss.substring(0,i%5));
+            iPerson p1=new iPerson(i,(int)(Math.random()*10),ss.substring(0,i%5));
             people.add(p1);
         }
 
@@ -54,12 +54,12 @@ int[] arr=new int[]{ 1 ,2 ,5 ,4 ,3,6,9,8};
 */
 
 
-       Map<String, List<Person>> studlistGrouped = people.stream()
-                .collect(Collectors.groupingBy(Person::getName));
+       Map<String, List<iPerson>> studlistGrouped = people.stream()
+                .collect(Collectors.groupingBy(iPerson::getName));
 
 final int i=0;
 //then sort groups by minimum id in each of them
-        List<Person> sorted =
+        List<iPerson> sorted =
                 studlistGrouped.entrySet().stream()
                //     .sorted(Comparator.comparing(stringListEntry -> stringListEntry.getValue()))
             //   .sorted(Comparator.comparing(e -> {//i++;
@@ -68,7 +68,7 @@ final int i=0;
               // .forEach(e-> System.out.println(e));//and also sort each group before collecting them in one list
                 .flatMap(e ->{
                  //   System.out.println(e);
-                    return e.getValue().stream().sorted(Comparator.comparing(Person::getSalary));}).collect(Collectors.toList());
+                    return e.getValue().stream().sorted(Comparator.comparing(iPerson::getSalary));}).collect(Collectors.toList());
         System.out.println(sorted);
         // Accumulate names into a List
       /*  List<String> list = people.stream().map(Person::getName).collect(Collectors.toList());
@@ -139,8 +139,9 @@ cur.remove(cur.size()-1);
             quicksort(arr,i+1,high);
 
         }*/
+
 }
-class Person {
+class iPerson {
     public int getId() {
         return id;
     }
@@ -171,7 +172,7 @@ class Person {
 
     int salary;
     String name;
-    public Person(int id,int salary,String name){
+    public iPerson(int id, int salary, String name){
         this.id=id;
         this.name=name;
         this.salary=salary;
@@ -191,3 +192,4 @@ class Person {
         return ((Person)o).salary-this.salary;
     }*/
 }
+
